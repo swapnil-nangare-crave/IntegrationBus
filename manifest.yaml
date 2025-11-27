@@ -1,0 +1,12 @@
+---
+applications:
+  - name: IntegrationBus
+    memory: 512M
+    disk_quota: 1G
+    instances: 1
+    buildpacks:
+      - nodejs_buildpack
+    command: npm start
+    path: .
+    env:
+      NODE_ENV: production

@@ -1,0 +1,106 @@
+{
+  "iflowName": "ARIBA_to_ARIBA_via_RR",
+  "steps": [
+    {
+      "type": "StartEvent",
+      "stepno": 1,
+      "label": "Start",
+      "id": "StartEvent_1",
+      "outgoing": ["SequenceFlow_1"],
+      "incoming": [],
+      "config": {}
+    },
+    {
+      "type": "requestReply",
+      "stepno": 2,
+      "label": "ARIBA RR Call",
+      "id": "ServiceTask_1",
+      "incoming": "SequenceFlow_1",
+      "outgoing": "SequenceFlow_2",
+      "config": {}
+    },
+    {
+      "type": "EndEvent",
+      "stepno": 3,
+      "label": "End",
+      "id": "EndEvent_1",
+      "incoming": "SequenceFlow_2",
+      "outgoing": null,
+      "config": {}
+    }
+  ],
+  "senders": [
+    {
+      "id": "MessageFlow_1",
+      "type": "ARIBA",
+      "source": "Participant_1",
+      "target": "StartEvent_1",
+      "label": "ARIBA Sender",
+      "config": {
+        "MessageFlow_1_aribaNetworkID": "AN01000000001",
+        "MessageFlow_1_cXMLVersion": "1.2.025",
+        "MessageFlow_1_userAgent": "AribaSN",
+        "MessageFlow_1_language": "EN_US",
+        "MessageFlow_1_getProfileURL": "https://service.ariba.com/service/transaction/cxml.asp",
+        "MessageFlow_1_deploymentMode": "PRODUCTION",
+        "MessageFlow_1_accountType": "SUPPLIER",
+        "MessageFlow_1_inboundRequestType": "InvoiceDetailRequest",
+        "MessageFlow_1_maximumMessages": "10",
+        "MessageFlow_1_systemID": "AN1234567890",
+        "MessageFlow_1_authenticationDomain": "NETWORK_USER_ID",
+        "MessageFlow_1_authentication": "CLIENT_CERTIFICATE",
+        "MessageFlow_1_credentialName": "Ariba_Credential",
+        "MessageFlow_1_privateKeyAlias": "AribaPrivateKey"
+      }
+    }
+  ],
+  "receivers": [
+    {
+      "id": "MessageFlow_2",
+      "type": "ARIBA",
+      "source": "ServiceTask_1",
+      "target": "Participant_2",
+      "label": "ARIBA Receiver",
+      "config": {
+        "MessageFlow_2_aribaNetworkID": "AN01000000001",
+        "MessageFlow_2_cXMLVersion": "1.2.025",
+        "MessageFlow_2_userAgent": "Ariba SN",
+        "MessageFlow_2_language": "EN_US",
+        "MessageFlow_2_getProfileURL": "https://service.ariba.com/service/transaction/cxml.asp",
+        "MessageFlow_2_deploymentMode": "PRODUCTION",
+        "MessageFlow_2_accountType": "BUYER",
+        "MessageFlow_2_authenticationDomain": "NETWORK_USER_ID",
+        "MessageFlow_2_authentication": "CLIENT_CERTIFICATE",
+        "MessageFlow_2_credentialName": "Ariba_Credential",
+        "MessageFlow_2_privateKeyAlias": "AribaPrivateKey"
+      }
+    }
+  ],
+  "mappings": [],
+  "scripts": [],
+  "xslts": [],
+  "sequenceFlows": [
+    {
+      "id": "SequenceFlow_1",
+      "sourceRef": "StartEvent_1",
+      "targetRef": "ServiceTask_1"
+    },
+    {
+      "id": "SequenceFlow_2",
+      "sourceRef": "ServiceTask_1",
+      "targetRef": "EndEvent_1"
+    }
+  ],
+  "messageFlows": [
+    {
+      "id": "MessageFlow_1",
+      "sourceRef": "Participant_1",
+      "targetRef": "StartEvent_1"
+    },
+    {
+      "id": "MessageFlow_2",
+      "sourceRef": "ServiceTask_1",
+      "targetRef": "Participant_2"
+    }
+  ]
+}
