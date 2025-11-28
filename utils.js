@@ -24,9 +24,6 @@ function configureContentModifier(updatedXML, currentstep) {
   let jsonObj = parser.parse(updatedXML);
 
   if (jsonObj["bpmn2:callActivity"] && currentstep.config) {
-    if (currentstep.config.headerTable) {
-        throw new Error("configureContentModifier is being called and headerTable is present!");
-    }
     const properties = jsonObj["bpmn2:callActivity"]["bpmn2:extensionElements"]?.["ifl:property"];
 
     if (Array.isArray(properties)) {
@@ -34,9 +31,8 @@ function configureContentModifier(updatedXML, currentstep) {
       if (currentstep.config.headerTable) {
         let headerTableValue = "";
         for (const header of currentstep.config.headerTable) {
-          headerTableValue += `<row><cell id='Action'>${header.Action}</cell><cell id='Type'>${header.Type}</cell><cell id='Value'>${header.Value}</cell><cell id='Default'>${header.Default || ''}</cell><cell id='Name'>${header.Name}</cell><cell id='Datatype'>${header.Datatype}</cell></row>`;
+          headerTableValue += `<row><cell id='Action'>${header.action}</cell><cell id='Type'>${header.type}</cell><cell id='Value'>${header.value}</cell><cell id='Default'>${header.default || ''}</cell><cell id='Name'>${header.name}</cell><cell id='Datatype'>${header.datatype}</cell></row>`;
         }
-        console.log("headerTableValue:", headerTableValue);
         const headerTableProp = properties.find(p => p.key === 'headerTable');
         if (headerTableProp) {
           headerTableProp.value = headerTableValue;
@@ -46,7 +42,7 @@ function configureContentModifier(updatedXML, currentstep) {
       if (currentstep.config.propertyTable) {
         let propertyTableValue = "";
         for (const prop of currentstep.config.propertyTable) {
-          propertyTableValue += `<row><cell id='Action'>${prop.Action}</cell><cell id='Type'>${prop.Type}</cell><cell id='Value'>${prop.Value}</cell><cell id='Default'>${prop.Default || ''}</cell><cell id='Name'>${prop.Name}</cell><cell id='Datatype'>${prop.Datatype}</cell></row>`;
+          propertyTableValue += `<row><cell id='Action'>${prop.action}</cell><cell id='Type'>${prop.type}</cell><cell id='Value'>${prop.value}</cell><cell id='Default'>${prop.default || ''}</cell><cell id='Name'>${prop.name}</cell><cell id='Datatype'>${prop.datatype}</cell></row>`;
         }
         const propertyTableProp = properties.find(p => p.key === 'propertyTable');
         if (propertyTableProp) {
