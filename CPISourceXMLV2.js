@@ -1,7 +1,7 @@
 export const SourceXML = [
-  {
-    palleteItems: {
-      contentModifier: `<bpmn2:callActivity id="CallActivity_" name="Content Modifier">
+    {
+        palleteItems: {
+            contentModifier: `<bpmn2:callActivity id="CallActivity_" name="Content Modifier">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>bodyType</key>
@@ -35,7 +35,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:callActivity>`,
-      messageMapping: `<bpmn2:callActivity id="CallActivity_" name="Message Mapping">
+            messageMapping: `<bpmn2:callActivity id="CallActivity_" name="Message Mapping">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>mappinguri</key>
@@ -81,7 +81,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:callActivity>`,
-      xsltMapping: `<bpmn2:callActivity id="CallActivity_" name="XSLT Mapping">
+            xsltMapping: `<bpmn2:callActivity id="CallActivity_" name="XSLT Mapping">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>mappingoutputformat</key>
@@ -127,7 +127,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:callActivity>`,
-      groovyScript: `<bpmn2:callActivity id="CallActivity_" name="Groovy Script">
+            groovyScript: `<bpmn2:callActivity id="CallActivity_" name="Groovy Script">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>scriptFunction</key>
@@ -161,7 +161,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:callActivity>`,
-      router: `<bpmn2:exclusiveGateway default="" id="ExclusiveGateway_" name="Router">
+            router: `<bpmn2:exclusiveGateway default="" id="ExclusiveGateway_" name="Router">
         <bpmn2:extensionElements>
             <ifl:property>
                 <key>componentVersion</key>
@@ -183,7 +183,7 @@ export const SourceXML = [
         <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
         <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:exclusiveGateway>`,
-      base64Encoder: `<bpmn2:callActivity id="CallActivity_" name="Base64 Encoder">
+            base64Encoder: `<bpmn2:callActivity id="CallActivity_" name="Base64 Encoder">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>componentVersion</key>
@@ -205,7 +205,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:callActivity>`,
-      base64Decoder: `<bpmn2:callActivity id="CallActivity_" name="Base64 Decoder">
+            base64Decoder: `<bpmn2:callActivity id="CallActivity_" name="Base64 Decoder">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>componentVersion</key>
@@ -227,7 +227,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:callActivity>`,
-      csvToXMLConverter: `<bpmn2:callActivity id="CallActivity_" name="CSV to XML Converter">
+            csvToXMLConverter: `<bpmn2:callActivity id="CallActivity_" name="CSV to XML Converter">
         <bpmn2:extensionElements>
             <ifl:property>
                 <key>Field_Separator_in_CSV</key>
@@ -269,7 +269,7 @@ export const SourceXML = [
         <bpmn2:incoming>SequenceFlow_11</bpmn2:incoming>
         <bpmn2:outgoing>SequenceFlow_18</bpmn2:outgoing>
     </bpmn2:callActivity>`,
-      processCall: `<bpmn2:callActivity id="CallActivity_" name="Process Call">
+            processCall: `<bpmn2:callActivity id="CallActivity_" name="Process Call">
         <bpmn2:extensionElements>
             <ifl:property>
                 <key>processId</key>
@@ -295,7 +295,7 @@ export const SourceXML = [
         <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
         <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
     </bpmn2:callActivity>`,
-      xmlValidator: `<bpmn2:callActivity id="CallActivity_" name="XML Validator">
+            xmlValidator: `<bpmn2:callActivity id="CallActivity_" name="XML Validator">
         <bpmn2:extensionElements>
             <ifl:property>
                 <key>xmlSchemaSource</key>
@@ -329,7 +329,7 @@ export const SourceXML = [
         <bpmn2:incoming>SequenceFlow_16</bpmn2:incoming>
         <bpmn2:outgoing>SequenceFlow_30</bpmn2:outgoing>
     </bpmn2:callActivity>`,
-      parallelMulticast: `<bpmn2:parallelGateway id="ParallelGateway_" name="Parallel Multicast">
+            parallelMulticast: `<bpmn2:parallelGateway id="ParallelGateway_" name="Parallel Multicast">
         <bpmn2:extensionElements>
             <ifl:property>
                 <key>componentVersion</key>
@@ -351,7 +351,7 @@ export const SourceXML = [
         <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
         <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
     </bpmn2:parallelGateway>`,
-      sequentialMulticast: `<bpmn2:parallelGateway id="ParallelGateway_" name="Sequential Multicast">
+            sequentialMulticast: `<bpmn2:parallelGateway id="ParallelGateway_" name="Sequential Multicast">
         <bpmn2:extensionElements>
             <ifl:property>
                 <key>routingSequenceTable</key>
@@ -377,7 +377,7 @@ export const SourceXML = [
         <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
         <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
     </bpmn2:parallelGateway>`,
-      requestReply: `<bpmn2:serviceTask id="ServiceTask_" name="Request Reply">
+            requestReply: `<bpmn2:serviceTask id="ServiceTask_" name="Request Reply">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>componentVersion</key>
@@ -395,7 +395,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:serviceTask>`,
-      generalSplitter: `<bpmn2:callActivity id="CallActivity_" name="General Splitter">
+            generalSplitter: `<bpmn2:callActivity id="CallActivity_" name="General Splitter">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>exprType</key>
@@ -449,7 +449,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:callActivity>`,
-      filter: `<bpmn2:callActivity id="CallActivity_" name="Filter ">
+            filter: `<bpmn2:callActivity id="CallActivity_" name="Filter ">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>xpathType</key>
@@ -475,7 +475,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:callActivity>`,
-      send: `<bpmn2:serviceTask id="ServiceTask_" name="Send">
+            send: `<bpmn2:serviceTask id="ServiceTask_" name="Send">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>componentVersion</key>
@@ -493,7 +493,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:serviceTask>`,
-      gather: `<bpmn2:callActivity id="CallActivity_" name="Gather">
+            gather: `<bpmn2:callActivity id="CallActivity_" name="Gather">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>targetXPath</key>
@@ -531,7 +531,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:callActivity>`,
-      aggregator: `<bpmn2:callActivity id="CallActivity_" name="Aggregator">
+            aggregator: `<bpmn2:callActivity id="CallActivity_" name="Aggregator">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>incomingFormat</key>
@@ -577,9 +577,1884 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
         </bpmn2:callActivity>`,
-    },
-    events: {
-      StartEvent: `<bpmn2:startEvent id="StartEvent_1" name="Start">
+            jsontoXMLConverter: `<bpmn2:callActivity id="CallActivity_" name="JSON to XML Converter">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>additionalRootElementName</key>
+                    <value>{{CallActivity_additionalRootElementName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>jsonNamespaceMapping</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>JsonToXmlConverter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::JsonToXmlConverter/version::1.1.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>useNamespaces</key>
+                    <value>{{CallActivity_useNamespaces}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>addXMLRootElement</key>
+                   <value>{{CallActivity_addXMLRootElement}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>additionalRootElementNamespace</key>
+                   <value>{{CallActivity_additionalRootElementNamespace}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>jsonNamespaceSeparator</key>
+                    <value>{{CallActivity_jsonNamespaceSeparator}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            xmltoCSVConverter: ` <bpmn2:callActivity id="CallActivity_" name="XML to CSV Converter">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>Field_Separator_in_CSV</key>
+                    <value>{{CallActivity_Field_Separator_in_CSV}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>CSV_Header</key>
+                   <value>{{CallActivity_CSV_Header}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>XML_Schema_File_Path</key>
+                 <value>{{CallActivity_XML_Schema_File_Path}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Include_Attribute</key>
+                    <value>{{CallActivity_Include_Attribute}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Include_Master</key>
+                     <value>{{CallActivity_Include_Master}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>XmlToCsvConverter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::XmlToCsvConverter/version::1.2.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Master_XPath_Field_Location</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>XPath_Field_Location</key>
+                    <value>{{CallActivity_XPath_Field_Location}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            xmlToEDIConverter: `<bpmn2:callActivity id="CallActivity_" name="XML to EDI Converter">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>edifactUseCustomSeparator</key>
+                   <value>{{CallActivity_edifactUseCustomSeparator}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactSourceEncoding</key>
+                    <value>{{CallActivity_edifactSourceEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsHeaderName</key>
+                   <value>{{CallActivity_tradacomsHeaderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsConversionPreference</key>
+                    <value>{{CallActivity_tradacomsConversionPreference}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12DataElementSeparator</key>
+                    <value>#x2a</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12EmptySegment</key>
+                    <value>{{CallActivity_x12EmptySegment}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12CompositeSeparator</key>
+                    <value>#x3a</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12EdiSchemaSource</key>
+                   <value>{{CallActivity_x12EdiSchemaSource}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsSchemaTable</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12SchemaTable</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactTargetEncoding</key>
+                     <value>{{CallActivity_edifactTargetEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactSchemaTable</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsSourceEncoding</key>
+                     <value>{{CallActivity_tradacomsSourceEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactSegmentTerminator</key>
+                    <value>#x27</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12SourceEncoding</key>
+                    <value>{{CallActivity_x12SourceEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12SegmentTerminator</key>
+                    <value>#x7e</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactDataElementSeparator</key>
+                    <value>#x2b</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactCompositeSeparator</key>
+                    <value>#x3a</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12UseCustomSeparator</key>
+                     <value>{{CallActivity_x12UseCustomSeparator}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsEmptySegment</key>
+                     <value>{{CallActivity_tradacomsEmptySegment}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsEdiSchemaSource</key>
+                     <value>{{CallActivity_tradacomsEdiSchemaSource}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactEmptySegment</key>
+                    <value>{{CallActivity_edifactEmptySegment}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>2.8</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactHeaderName</key>
+                   <value>{{CallActivity_edifactHeaderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactDecimalCharacter</key>
+                    <value>#x2e</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12HeaderName</key>
+                    <value>{{CallActivity_x12HeaderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactEdiSchemaSource</key>
+                      <value>{{CallActivity_edifactEdiSchemaSource}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>XMLtoEDIConverter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::XMLtoEDIConverter/version::2.8.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactEscapeCharacter</key>
+                    <value>#x3f</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12RepetitionSeparator</key>
+                    <value>#x5e</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            xmltoJSONConverter: `<bpmn2:callActivity id="CallActivity_" name="XML to JSON Converter">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>xmlJsonUseStreaming</key>
+                    <value>{{CallActivity_xmlJsonUseStreaming}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>xmlJsonSuppressRootElement</key>
+                    <value>{{CallActivity_xmlJsonSuppressRootElement}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>xmlJsonPathTable</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>jsonOutputEncoding</key>
+                    <value>{{CallActivity_jsonOutputEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>jsonNamespaceMapping</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>xmlJsonConvertAllElements</key>
+                    <value>specific</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>XmlToJsonConverter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::XmlToJsonConverter/version::1.0.8</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>useNamespaces</key>
+                   <value>{{CallActivity_useNamespaces}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>jsonNamespaceSeparator</key>
+                     <value>{{CallActivity_jsonNamespaceSeparator}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            ediToXMLConverter: `<bpmn2:callActivity id="CallActivity_" name="EDI to XML Converter ">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>tradacomsSourceEncoding</key>
+                    <value>{{CallActivity_tradacomsSourceEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactSourceEncoding</key>
+                    <value>{{CallActivity_edifactSourceEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12SourceEncoding</key>
+                    <value>{{CallActivity_x12SourceEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsHeaderName</key>
+                    <value>{{CallActivity_tradacomsHeaderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsConversionPreference</key>
+                    <value>{{CallActivity_tradacomsConversionPreference}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsEdiSchemaSource</key>
+                    <value>{{CallActivity_tradacomsEdiSchemaSource}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>2.7</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactHeaderName</key>
+                    <value>{{CallActivity_edifactHeaderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactEnvelopeTruncator</key>
+                    <value>{{CallActivity_edifactEnvelopeTruncator}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactDecimalCharacter</key>
+                    <value>{{CallActivity_edifactDecimalCharacter}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12TargetRootElement</key>
+                    <value>interchange</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactTargetRootElement</key>
+                    <value>{{CallActivity_edifactTargetRootElement}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12EdiSchemaSource</key>
+                    <value>{{CallActivity_x12EdiSchemaSource}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12HeaderName</key>
+                    <value>{{CallActivity_x12HeaderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12EnvelopeTruncator</key>
+                    <value>{{CallActivity_x12EnvelopeTruncator}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsSchemaTable</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactEdiSchemaSource</key>
+                    <value>{{CallActivity_edifactEdiSchemaSource}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>EDItoXMLConverter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::EDItoXMLConverter/version::2.7.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12SchemaTable</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactTargetEncoding</key>
+                    <value>UTF-8</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactSchemaTable</key>
+                    <value/>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            zipCompression: ` <bpmn2:callActivity id="CallActivity_" name="ZIP Compression">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Encoder</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::ZIP Compress/version::1.0.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encoderType</key>
+                    <value>ZIP Compress</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            IDMapping: `<bpmn2:callActivity id="CallActivity_" name="ID Mapping ">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>visibility</key>
+                    <value>{{CallActivity_visibility}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>sourceMessageID</key>
+                    <value>{{CallActivity_sourceMessageID}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>expire</key>
+                    <value>{{CallActivity_expire}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>context</key>
+                    <value>{{CallActivity_context}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>targetHeader</key>
+                    <value>{{CallActivity_targetHeader}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>IDMapper</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::IDMapper/version::1.0.0</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            Join: `<bpmn2:parallelGateway id="ParallelGateway_" name="Join">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Join</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::Join/version::1.0.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>subActivityType</key>
+                    <value>parallel</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:parallelGateway>`,
+            operationMapping: `<bpmn2:callActivity id="CallActivity_" name="Operation Mapping ">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>mappinguri</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>mappingname</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>mappingType</key>
+                    <value>OperationMapping</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>mappingpath</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Mapping</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::OperationMapping/version::1.1.0</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            ediSplitter: ` <bpmn2:callActivity id="CallActivity_" name="EDI Splitter">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>edifactSourceEncoding</key>
+                    <value>{{CallActivity_edifactSourceEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsHeaderName</key>
+                    <value>{{CallActivity_tradacomsHeaderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactNumberRangeName</key>
+                    <value>{{CallActivity_edifactNumberRangeName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactValidateMessage</key>
+                    <value>{{CallActivity_edifactValidateMessage}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactTransactionMode</key>
+                    <value>{{CallActivity_edifactTransactionMode}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactUnaRequired</key>
+                    <value>{{CallActivity_edifactUnaRequired}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsSplitPreference</key>
+                    <value>{{CallActivity_tradacomsSplitPreference}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12TSNumberFrom</key>
+                    <value>{{CallActivity_x12TSNumberFrom}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12ExcludeAk3Ak4</key>
+                    <value>{{CallActivity_x12ExcludeAk3Ak4}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12InterchangeNumberFrom</key>
+                    <value>{{CallActivity_x12InterchangeNumberFrom}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12UniqueTSNumber</key>
+                    <value>{{CallActivity_x12UniqueTSNumber}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12UniqueInterchangeNumber</key>
+                    <value>{{CallActivity_x12UniqueInterchangeNumber}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12EdiSchemaSource</key>
+                    <value>{{CallActivity_x12EdiSchemaSource}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12UniqueFGNumber</key>
+                    <value>{{CallActivity_x12UniqueFGNumber}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12ValidateMessageOptions</key>
+                    <value>{{CallActivity_x12ValidateMessageOptions}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>parallelProcessing</key>
+                    <value>{{CallActivity_parallelProcessing}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12FGNumberRangeName</key>
+                    <value>{{CallActivity_x12FGNumberRangeName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactContrlVersion</key>
+                    <value>{{CallActivity_edifactContrlVersion}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsSchemaTable</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12SchemaTable</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactSchemaTable</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsSourceEncoding</key>
+                    <value>{{CallActivity_tradacomsSourceEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactValidate</key>
+                    <value>{{CallActivity_edifactValidate}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12SourceEncoding</key>
+                    <value>{{CallActivity_x12SourceEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactSendInvalidMessages</key>
+                    <value>{{CallActivity_edifactSendInvalidMessages}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactCreateAck</key>
+                    <value>{{CallActivity_edifactCreateAck}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactUniqueInterchangeNumber</key>
+                    <value>{{CallActivity_edifactUniqueInterchangeNumber}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tradacomsEdiSchemaSource</key>
+                   <value>{{CallActivity_tradacomsEdiSchemaSource}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12CreateAck</key>
+                    <value>{{CallActivity_x12CreateAck}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>2.10</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12SendInvalidMessages</key>
+                   <value>{{CallActivity_x12SendInvalidMessages}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactHeaderName</key>
+                    <value>{{CallActivity_edifactHeaderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>splitType</key>
+                    <value>EDISplitter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>timeOut</key>
+                    <value>{{CallActivity_timeOut}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12NumberRangeName</key>
+                    <value>{{CallActivity_x12NumberRangeName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactDecimalCharacter</key>
+                    <value>{{CallActivity_edifactDecimalCharacter}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12TransactionMode</key>
+                    <value>{{CallActivity_x12TransactionMode}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12TSNumberRangeName</key>
+                    <value>{{CallActivity_x12TSNumberRangeName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12HeaderName</key>
+                    <value>{{CallActivity_x12HeaderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12FunctionalGroupNumberFrom</key>
+                    <value>{{CallActivity_x12FunctionalGroupNumberFrom}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactCustomizeEnvelope</key>
+                    <value>{{CallActivity_edifactCustomizeEnvelope}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>x12CustomizeEnvelope</key>
+                    <value>{{CallActivity_x12CustomizeEnvelope}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactInterchangeNumberFrom</key>
+                    <value>{{CallActivity_edifactInterchangeNumberFrom}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>edifactEdiSchemaSource</key>
+                    <value>{{CallActivity_edifactEdiSchemaSource}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Splitter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::EDISplitter/version::2.10.0</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            idocSplitter: ` <bpmn2:callActivity id="CallActivity_" name="IDoc Splitter">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Splitter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::IDoc/version::1.1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>splitType</key>
+                    <value>IDoc</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            javaScript: `<bpmn2:callActivity id="CallActivity_" name="JavaScript">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>scriptFunction</key>
+                    <value>{{CallActivity_scriptFunction}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>scriptBundleId</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Script</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::JavaScript/version::1.1.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>subActivityType</key>
+                    <value>JavaScript</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>script</key>
+                    <value>{{CallActivity_script}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            messageDigest: ` <bpmn2:callActivity id="CallActivity_" name="Message Digest">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>filter</key>
+                    <value>{{CallActivity_filter}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>canonicalizationMethod</key>
+                    <value>{{CallActivity_canonicalizationMethod}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>targetHeader</key>
+                    <value>{{CallActivity_targetHeader}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>digestAlgorithm</key>
+                    <value>{{CallActivity_digestAlgorithm}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>MessageDigest</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::MessageDigest/version::1.1.1</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            xmlModifier: `    <bpmn2:callActivity id="CallActivity_" name="XML Modifier">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>removeExternalDTDs</key>
+                    <value>{{CallActivity_removeExternalDTDs}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>removeXmlDeclaration</key>
+                    <value>{{CallActivity_removeXmlDeclaration}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>XmlModifier</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::XmlModifier/version::1.1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>xmlCharacterHandling</key>
+                    <value>{{CallActivity_xmlCharacterHandling}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            zipDecompression: `<bpmn2:callActivity id="CallActivity_" name="ZIP Decompression 1">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Decoder</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::ZIP Decompress/version::1.0.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encoderType</key>
+                    <value>ZIP Decompress</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            gzipCompression: `<bpmn2:callActivity id="CallActivity_" name="GZIP Compression 1">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Encoder</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::GZIP Compress/version::1.0.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encoderType</key>
+                    <value>GZIP Compress</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            ediExtractor: `<bpmn2:callActivity id="CallActivity_" name="EDI Extractor">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>2.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>EDIExtractor</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::EDIExtractor/version::2.1.0</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            mimeMultipartDecoder: `<bpmn2:callActivity id="CallActivity_" name="MIME Multipart Decoder 1">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>MultipartHeadersInline</key>
+                    <value>{{CallActivity_MultipartHeadersInline}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Decoder</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::MIME Multipart Message Decode/version::1.0.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encoderType</key>
+                    <value>MIME Multipart Message Decode</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            mimeMultipartEncoder: `<bpmn2:callActivity id="CallActivity_" name="MIME Multipart Encoder 1">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>MultipartAddHeadersInline</key>
+                    <value>{{CallActivity_MultipartAddHeadersInline}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MultipartSubtype</key>
+                    <value>{{CallActivity_MultipartSubtype}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>IncludeHeaders</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>FoldLongHeaders</key>
+                    <value>{{CallActivity_FoldLongHeaders}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Encoder</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::MIME Multipart Message Encode/version::1.2.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encoderType</key>
+                    <value>MIME Multipart Message Encode</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            GZIPDecompression: ` <bpmn2:callActivity id="CallActivity_" name="GZIP Decompression">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Decoder</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::GZIP Decompress/version::1.0.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encoderType</key>
+                    <value>GZIP Decompress</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            PKCS7Decryptor: ` <bpmn2:callActivity id="CallActivity_" name="PKCS7Decryptor">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>isBodyBase64Encoded</key>
+                    <value>{{CallActivity_isBodyBase64Encoded}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>publicKeyAliases</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Decrypt</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::Decrypt/version::1.2.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PKCS7SignContentType</key>
+                    <value>{{CallActivity_PKCS7SignContentType}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            PGPEncryptor: ` <bpmn2:callActivity id="CallActivity_" name="PGPEncryptor">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>PgpSignerUserIDs</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>Key_Length</key>
+                    <value>{{CallActivity_Key_Length}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PgpArmored</key>
+                    <value>{{CallActivity_PgpArmored}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PgpDigestAlgorithm</key>
+                    <value>{{CallActivity_PgpDigestAlgorithm}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PgpContentEncryptionAlgorithm</key>
+                    <value>{{CallActivity_PgpContentEncryptionAlgorithm}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.3</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>PgpEncrypt</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::PgpEncrypt/version::1.3.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PgpSignatureOption</key>
+                    <value>{{CallActivity_PgpSignatureOption}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PgpCompressionAlgorithm</key>
+                    <value>{{CallActivity_PgpCompressionAlgorithm}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PgpIntegrity</key>
+                   <value>{{CallActivity_PgpIntegrity}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PgpEncryptionUserIDs</key>
+                    <value/>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            PKCS7Encryptor: ` <bpmn2:callActivity id="CallActivity_" name="PKCS7Encryptor">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>headers</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>Block_Size</key>
+                   <value>{{CallActivity_Block_Size}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Key_Length</key>
+                    <value>{{CallActivity_Key_Length}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PKCS7PrivateKeyAliases</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>shouldEncodeBodyKey</key>
+                    <value>{{CallActivity_shouldEncodeBodyKey}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Encryption_Algorithem</key>
+                   <value>{{CallActivity_Encryption_Algorithem}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.3</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Encrypt</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::Encrypt/version::1.3.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PKCS7SignContentType</key>
+                    <value>{{CallActivity_PKCS7SignContentType}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            PKCS7Signer: `        <bpmn2:callActivity id="CallActivity_" name="PKCS7 Signer">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>headers</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>Block_Size</key>
+                      <value>{{CallActivity_Block_Size}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>shouldEncodeSignedData</key>
+                     <value>{{CallActivity_shouldEncodeSignedData}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.5</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>SignMessage</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::SignMessage/version::1.5.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>OIDContentType</key>
+                    <value>1.2.840.113549.1.7.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>shouldIncludeContentInSign</key>
+                     <value>{{CallActivity_shouldIncludeContentInSign}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            SimpleSigner: ` <bpmn2:callActivity id="CallActivity_" name="Simple Signer">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>privateKeyAlias</key>
+                    <value>{{CallActivity_privateKeyAlias}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.3</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>SimpleSignMessage</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::SimpleSignMessage/version::1.3.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>signatureAlgorithm</key>
+                    <value>{{CallActivity_signatureAlgorithm}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>signatureTargetHeader</key>
+                     <value>{{CallActivity_signatureTargetHeader}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            xmlDigitalSigner: ` <bpmn2:callActivity id="CallActivity_" name="XML Signer">
+            <bpmn2:extensionElements>
+<ifl:property>
+    <key>privateKeyAlias</key>
+    <value>{{CallActivity_privateKeyAlias}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureAlgorithm</key>
+    <value>{{CallActivity_signatureAlgorithm}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureType</key>
+    <value>{{CallActivity_signatureType}}</value>
+</ifl:property>
+<ifl:property>
+    <key>digestAlgorithm</key>
+    <value>{{CallActivity_digestAlgorithm}}</value>
+</ifl:property>
+<ifl:property>
+    <key>keyInfoHasX509CertChain</key>
+    <value>{{CallActivity_keyInfoHasX509CertChain}}</value>
+</ifl:property>
+<ifl:property>
+    <key>keyInfoHasX509Certificate</key>
+    <value>{{CallActivity_keyInfoHasX509Certificate}}</value>
+</ifl:property>
+<ifl:property>
+    <key>keyInfoHasIssuerName</key>
+    <value>{{CallActivity_keyInfoHasIssuerName}}</value>
+</ifl:property>
+<ifl:property>
+    <key>keyInfoHasKeyValue</key>
+    <value>{{CallActivity_keyInfoHasKeyValue}}</value>
+</ifl:property>
+<ifl:property>
+    <key>addKeyInfoReference</key>
+    <value>{{CallActivity_addKeyInfoReference}}</value>
+</ifl:property>
+<ifl:property>
+    <key>schemaResourceUri</key>
+    <value>{{CallActivity_schemaResourceUri}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesIdentifierName</key>
+    <value>{{CallActivity_xadesIdentifierName}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureXMLNamespace</key>
+    <value>{{CallActivity_signatureXMLNamespace}}</value>
+</ifl:property>
+<ifl:property>
+    <key>parentLocalName</key>
+    <value>{{CallActivity_parentLocalName}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xpathExpression</key>
+    <value>{{CallActivity_xpathExpression}}</value>
+</ifl:property>
+<ifl:property>
+    <key>canonicalizationMethod</key>
+    <value>{{CallActivity_canonicalizationMethod}}</value>
+</ifl:property>
+<ifl:property>
+    <key>transformMethod</key>
+    <value>{{CallActivity_transformMethod}}</value>
+</ifl:property>
+<ifl:property>
+    <key>contentReferenceType</key>
+    <value>{{CallActivity_contentReferenceType}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureXMLNamespacePrefix</key>
+    <value>{{CallActivity_signatureXMLNamespacePrefix}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureId</key>
+    <value>{{CallActivity_signatureId}}</value>
+</ifl:property>
+<ifl:property>
+    <key>outputEncoding</key>
+    <value>{{CallActivity_outputEncoding}}</value>
+</ifl:property>
+<ifl:property>
+    <key>omitXmlDeclaration</key>
+    <value>{{CallActivity_omitXmlDeclaration}}</value>
+</ifl:property>
+<ifl:property>
+    <key>disallowDoctypeDecl</key>
+    <value>{{CallActivity_disallowDoctypeDecl}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesAddSigningTime</key>
+    <value>{{CallActivity_xadesAddSigningTime}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesAddSigningCertificate</key>
+    <value>{{CallActivity_xadesAddSigningCertificate}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesSignerRoleClaimedRoles</key>
+    <value>{{CallActivity_xadesSignerRoleClaimedRoles}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesCertificateUri</key>
+    <value>{{CallActivity_xadesCertificateUri}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesDataObjectFormatDescription</key>
+    <value>{{CallActivity_xadesDataObjectFormatDescription}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesIdentifierQualifier</key>
+    <value>{{CallActivity_xadesIdentifierQualifier}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesIdentifierDescription</key>
+    <value>{{CallActivity_xadesIdentifierDescription}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesIdentifierDocumentationReference</key>
+    <value>{{CallActivity_xadesIdentifierDocumentationReference}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesDataObjectFormatMimeType</key>
+    <value>{{CallActivity_xadesDataObjectFormatMimeType}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesSigningCertificateDigestAlgorithm</key>
+    <value>{{CallActivity_xadesSigningCertificateDigestAlgorithm}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureProductionPlaceCity</key>
+    <value>{{CallActivity_signatureProductionPlaceCity}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureProductionPlaceState</key>
+    <value>{{CallActivity_signatureProductionPlaceState}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureProductionPlacePostalCode</key>
+    <value>{{CallActivity_signatureProductionPlacePostalCode}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureProductionPlaceCountry</key>
+    <value>{{CallActivity_signatureProductionPlaceCountry}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureCommitment</key>
+    <value>{{CallActivity_signatureCommitment}}</value>
+</ifl:property>
+<ifl:property>
+    <key>signatureCommitmentDescription</key>
+    <value>{{CallActivity_signatureCommitmentDescription}}</value>
+</ifl:property>
+<ifl:property>
+    <key>commitmentDocumentationReferenceTable</key>
+    <value>{{CallActivity_commitmentDocumentationReferenceTable}}</value>
+</ifl:property>
+<ifl:property>
+    <key>commitmentQualifierTable</key>
+    <value>{{CallActivity_commitmentQualifierTable}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesEpesSignaturePolicy</key>
+    <value>{{CallActivity_xadesEpesSignaturePolicy}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesEpesIdentifier</key>
+    <value>{{CallActivity_xadesEpesIdentifier}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesEpesIdentifierQualifier</key>
+    <value>{{CallActivity_xadesEpesIdentifierQualifier}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesEpesDescription</key>
+    <value>{{CallActivity_xadesEpesDescription}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesPolicyQualifierTab</key>
+    <value>{{CallActivity_xadesPolicyQualifierTab}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesEpesDigestAlgorithm</key>
+    <value>{{CallActivity_xadesEpesDigestAlgorithm}}</value>
+</ifl:property>
+<ifl:property>
+    <key>xadesEpesDigestValue</key>
+    <value>{{CallActivity_xadesEpesDigestValue}}</value>
+</ifl:property>
+ </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            xmlSignatureVerifier: ` <bpmn2:callActivity id="CallActivity_" name="XML Signature Verifier">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>omitXmlDeclaration</key>
+                    <value>{{CallActivity_omitXmlDeclaration}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>verifySignatureType</key>
+                    <value>{{CallActivity_verifySignatureType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>publicKeyAliases</key>
+                    <value>{{CallActivity_publicKeyAliases}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>disallowDoctypeDecl</key>
+                    <value>{{CallActivity_disallowDoctypeDecl}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>schemaFieldPath</key>
+                    <value>{{CallActivity_schemaFieldPath}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>XMLDigitalVerifySign</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::XMLDigitalVerifySign/version::1.1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>CheckForKeyInfo</key>
+                    <value>{{CallActivity_CheckForKeyInfo}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            getDatastore: `<bpmn2:callActivity id="CallActivity_" name="Get">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>visibility</key>
+                    <value>{{CallActivity_visibility}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>dataStoreId</key>
+                    <value>{{CallActivity_dataStoreId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.7</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>DBstorage</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::get/version::1.7.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>operation</key>
+                    <value>get</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>delete</key>
+                    <value>{{CallActivity_delete}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>stopOnMissingEntry</key>
+                    <value>{{CallActivity_stopOnMissingEntry}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>storageName</key>
+                    <value>{{CallActivity_storageName}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            selectDatastore: `<bpmn2:callActivity id="CallActivity_" name="Select">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>visibility</key>
+                    <value>{{CallActivity_visibility}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>maxresults</key>
+                    <value>{{CallActivity_maxresults}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.7</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>DBstorage</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::select/version::1.7.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>operation</key>
+                    <value>select</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>delete</key>
+                    <value>{{CallActivity_delete}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>storageName</key>
+                    <value>{{CallActivity_storageName}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            writeDatastore: `<bpmn2:callActivity id="CallActivity_" name="Write">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>visibility</key>
+                    <value>{{CallActivity_visibility}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>messageId</key>
+                    <value>{{CallActivity_messageId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.7</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>delete</key>
+                    <value>false</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>storageName</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>includeMessageHeaders</key>
+                    <value>{{CallActivity_includeMessageHeaders}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>alert</key>
+                    <value>{{CallActivity_alert}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encrypt</key>
+                    <value>{{CallActivity_encrypt}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>expire</key>
+                    <value>{{CallActivity_expire}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>override</key>
+                    <value>{{CallActivity_override}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>DBstorage</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::put/version::1.7.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>operation</key>
+                    <value>put</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            persist: ` <bpmn2:callActivity id="CallActivity_" name="Persist">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>stepid</key>
+                    <value>{{CallActivity_stepid}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Persist</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::Persist/version::1.0.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>enableEncrypt</key>
+                    <value>{{CallActivity_enableEncrypt}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            ediValidator: ` <bpmn2:callActivity id="CallActivity_" name="EDI Validator">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>headerName</key>
+                    <value>{{CallActivity_headerName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ediSchemaSource</key>
+                    <value>{{CallActivity_ediSchemaSource}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>sourceEncoding</key>
+                    <value>{{CallActivity_sourceEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>preventException</key>
+                    <value>{{CallActivity_preventException}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.7</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>EDIValidator</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::EDIValidator/version::1.7.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>schemaTable</key>
+                    <value/>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            PKCS7_CMSSplitter: `<bpmn2:callActivity id="CallActivity_" name="PKCS#7/CMS Splitter ">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>PK7_WrapContent</key>
+                    <value>{{CallActivity_PK7_WrapContent}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PK7_Base64_Payload</key>
+                    <value>{{CallActivity_PK7_Base64_Payload}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PK7_Base64_SIG</key>
+                    <value>{{CallActivity_PK7_Base64_SIG}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tokenValue2</key>
+                    <value>{{CallActivity_tokenValue2}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PK7_Payload</key>
+                    <value>{{CallActivity_PK7_Payload}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Splitter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::PKCS#7/CMS Signature-Content Splitter/version::1.1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tokenValue</key>
+                    <value>{{CallActivity_tokenValue}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>splitType</key>
+                    <value>PKCS#7/CMS Signature-Content Splitter</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            tarSplitter: `<bpmn2:callActivity id="CallActivity_" name="Tar Splitter ">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>stopOnExecution</key>
+                    <value>{{CallActivity_stopOnExecution}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Splitter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::TarSplitter/version::1.0.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tarSplitFileName</key>
+                    <value>{{CallActivity_tarSplitFileName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>splitType</key>
+                    <value>TarSplitter</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            zipSplitter: `<bpmn2:callActivity id="CallActivity_" name="Zip Splitter ">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>stopOnExecution</key>
+                    <value>{{CallActivity_stopOnExecution}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>zipSplitFileName</key>
+                    <value>{{CallActivity_zipSplitFileName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Splitter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::ZipSplitter/version::1.0.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>splitType</key>
+                    <value>ZipSplitter</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            pgpDecryptor: `<bpmn2:callActivity id="CallActivity_" name="PGPDecryptor ">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>PgpDecryptionSignerUserIDs</key>
+                    <value>&lt;row&gt;&lt;cell id='userId'&gt;&lt;/cell&gt;&lt;/row&gt;</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>PgpDecryptionSignatureOption</key>
+                    <value>{{CallActivity_PgpDecryptionSignatureOption}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>PgpDecrypt</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::PgpDecrypt/version::1.2.0</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            deleteDatastore: `<bpmn2:callActivity id="CallActivity_" name="Delete">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>visibility</key>
+                    <value>{{CallActivity_visibility}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>messageId</key>
+                    <value>{{CallActivity_messageId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.7</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>DBstorage</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::delete/version::1.7.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>operation</key>
+                    <value>delete</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>storageName</key>
+                    <value>{{CallActivity_storageName}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            idempotentProcessCall: `<bpmn2:callActivity id="CallActivity_8" name="Select">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>visibility</key>
+                    <value>{{CallActivity_visibility}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>maxresults</key>
+                    <value>{{CallActivity_maxresults}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.7</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>DBstorage</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::select/version::1.7.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>operation</key>
+                    <value>select</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>delete</key>
+                    <value>{{CallActivity_delete}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>storageName</key>
+                    <value>{{CallActivity_storageName}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_3</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_9</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+            loopingProcessCall: `<bpmn2:callActivity id="CallActivity_" name="Looping Process Call ">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>postProcessing</key>
+                    <value>{{CallActivity_postProcessing}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>loopId</key>
+                    <value>StandardLoopCharacteristics_1761285674785</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>processId</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>expressionType</key>
+                    <value>{{CallActivity_expressionType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.3</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>ProcessCallElement</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::LoopingProcess/version::1.3.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>subActivityType</key>
+                    <value>LoopingProcess</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+            <bpmn2:standardLoopCharacteristics id="StandardLoopCharacteristics_1761285674785" loopMaximum="100">
+                <bpmn2:loopCondition id="FormalExpression_1761285674785" xsi:type="bpmn2:tFormalExpression"/>
+            </bpmn2:standardLoopCharacteristics>
+        </bpmn2:callActivity>`,
+            iteratingSplitter: `<bpmn2:callActivity id="CallActivity_" name="Iterating Splitter ">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>exprType</key>
+                    <value>{{CallActivity_exprType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Streaming</key>
+                    <value>{{CallActivity_Streaming}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>StopOnExecution</key>
+                    <value>{{CallActivity_StopOnExecution}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>splitExprValue</key>
+                    <value>{{CallActivity_splitExprValue}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ParallelProcessing</key>
+                    <value>{{CallActivity_ParallelProcessing}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.6</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>grouping</key>
+                    <value>{{CallActivity_grouping}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>splitType</key>
+                    <value>Camel</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>timeOut</key>
+                    <value>300</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>SplitterThreads</key>
+                    <value>10</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>activityType</key>
+                    <value>Splitter</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::FlowstepVariant/cname::Camel/version::1.6.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tokenValue</key>
+                    <value>{{CallActivity_tokenValue}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+            <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
+        </bpmn2:callActivity>`,
+        },
+        events: {
+            StartEvent: `<bpmn2:startEvent id="StartEvent_1" name="Start">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>componentVersion</key>
@@ -593,7 +2468,7 @@ export const SourceXML = [
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
             <bpmn2:messageEventDefinition/>
         </bpmn2:startEvent>`,
-      EndEvent: `<bpmn2:endEvent id="EndEvent_1" name="End">
+            EndEvent: `<bpmn2:endEvent id="EndEvent_1" name="End">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>componentVersion</key>
@@ -607,7 +2482,7 @@ export const SourceXML = [
             <bpmn2:incoming>SequenceFlow_</bpmn2:incoming>
             <bpmn2:messageEventDefinition/>
         </bpmn2:endEvent>`,
-      TerminateMessage: `<bpmn2:endEvent id="EndEvent_1" name="Terminate">
+            TerminateMessage: `<bpmn2:endEvent id="EndEvent_1" name="Terminate">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>cmdVariantUri</key>
@@ -620,7 +2495,7 @@ export const SourceXML = [
             </bpmn2:extensionElements>
             <bpmn2:terminateEventDefinition/>
         </bpmn2:endEvent>`,
-      Timer: `<bpmn2:startEvent id="StartEvent_1" name="Start Timer">
+            Timer: `<bpmn2:startEvent id="StartEvent_1" name="Start Timer">
             <bpmn2:outgoing>SequenceFlow_</bpmn2:outgoing>
             <bpmn2:timerEventDefinition id="TimerEventDefinition_289170">
                 <bpmn2:extensionElements>
@@ -643,12 +2518,12 @@ export const SourceXML = [
                 </bpmn2:extensionElements>
             </bpmn2:timerEventDefinition>
         </bpmn2:startEvent>`,
+        },
+        sequenceFlow: ` <bpmn2:sequenceFlow id="SequenceFlow_" sourceRef="" targetRef=""/>`,
     },
-    sequenceFlow: ` <bpmn2:sequenceFlow id="SequenceFlow_" sourceRef="" targetRef=""/>`,
-  },
-  {
-    SenderAdaptors: {
-      HTTPS: `<bpmn2:messageFlow id="MessageFlow_" name="HTTPS" sourceRef="" targetRef="">
+    {
+        SenderAdaptors: {
+            HTTPS: `<bpmn2:messageFlow id="MessageFlow_" name="HTTPS" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -732,7 +2607,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SFTP: `<bpmn2:messageFlow id="MessageFlow_" name="SFTP" sourceRef="" targetRef="">
+            SFTP: `<bpmn2:messageFlow id="MessageFlow_" name="SFTP" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>disconnect</key>
@@ -944,7 +2819,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SOAPRM: `<bpmn2:messageFlow id="MessageFlow_" name="SOAP" sourceRef="" targetRef="">
+            SOAPRM: `<bpmn2:messageFlow id="MessageFlow_" name="SOAP" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>ComponentType</key>
@@ -1032,7 +2907,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SOAP1X: `<bpmn2:messageFlow id="MessageFlow_" name="SOAP" sourceRef="" targetRef="">
+            SOAP1X: `<bpmn2:messageFlow id="MessageFlow_" name="SOAP" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -1196,7 +3071,7 @@ export const SourceXML = [
         </ifl:property>
         </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      ODATA: `<bpmn2:messageFlow id="MessageFlow_" name="OData" sourceRef="" targetRef="">
+            ODATA: `<bpmn2:messageFlow id="MessageFlow_" name="OData" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -1280,7 +3155,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      FTP: `<bpmn2:messageFlow id="MessageFlow_" name="FTP" sourceRef="" targetRef="">
+            FTP: `<bpmn2:messageFlow id="MessageFlow_" name="FTP" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>disconnect</key>
@@ -1448,7 +3323,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      IDOC: `<bpmn2:messageFlow id="MessageFlow_" name="IDOC" sourceRef="" targetRef="">
+            IDOC: `<bpmn2:messageFlow id="MessageFlow_" name="IDOC" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -1536,7 +3411,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      GOOGLEPUBSUB: `<bpmn2:messageFlow id="MessageFlow_" name="GooglePubSub" sourceRef="" targetRef="">
+            GOOGLEPUBSUB: `<bpmn2:messageFlow id="MessageFlow_" name="GooglePubSub" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>saUrl</key>
@@ -1688,7 +3563,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SALESFORCEPUBSUB: ` <bpmn2:messageFlow id="MessageFlow_" name="SalesforcePubSub" sourceRef="" targetRef="">
+            SALESFORCEPUBSUB: ` <bpmn2:messageFlow id="MessageFlow_" name="SalesforcePubSub" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>issuerAlias</key>
@@ -1840,7 +3715,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SALSEFORCE: `<bpmn2:messageFlow id="MessageFlow_" name="Salesforce" sourceRef="" targetRef="">
+            SALSEFORCE: `<bpmn2:messageFlow id="MessageFlow_" name="Salesforce" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>issuerAlias</key>
@@ -2024,7 +3899,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      AS4_EBMS3_PUSH: `<bpmn2:messageFlow id="MessageFlow_" name="AS4" sourceRef="" targetRef="">
+            AS4_EBMS3_PUSH: `<bpmn2:messageFlow id="MessageFlow_" name="AS4" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>authPrivateKeyAliasResponse</key>
@@ -2336,7 +4211,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      AS4_EBMS3_PULL: `<bpmn2:messageFlow id="MessageFlow_" name="AS4" sourceRef="" targetRef="">
+            AS4_EBMS3_PULL: `<bpmn2:messageFlow id="MessageFlow_" name="AS4" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>initiatorPartyRole</key>
@@ -2536,7 +4411,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      AS4_EBMS3_RECEIPT: `<bpmn2:messageFlow id="MessageFlow_" name="AS4" sourceRef="" targetRef="">
+            AS4_EBMS3_RECEIPT: `<bpmn2:messageFlow id="MessageFlow_" name="AS4" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -2680,7 +4555,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      IBMMQ_JMS_POLL: `<bpmn2:messageFlow id="MessageFlow_" name="IBMMQ" sourceRef="" targetRef="">
+            IBMMQ_JMS_POLL: `<bpmn2:messageFlow id="MessageFlow_" name="IBMMQ" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -2876,7 +4751,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      IBMMQ_JMS_SUBSCRIBE: `<bpmn2:messageFlow id="MessageFlow_" name="IBMMQ" sourceRef="" targetRef="">
+            IBMMQ_JMS_SUBSCRIBE: `<bpmn2:messageFlow id="MessageFlow_" name="IBMMQ" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -3052,7 +4927,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      IBMMQ_REST: `<bpmn2:messageFlow id="MessageFlow_" name="IBMMQ" sourceRef="" targetRef="">
+            IBMMQ_REST: `<bpmn2:messageFlow id="MessageFlow_" name="IBMMQ" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -3196,7 +5071,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      XI: `<bpmn2:messageFlow id="MessageFlow_" name="XI" sourceRef="" targetRef="">
+            XI: `<bpmn2:messageFlow id="MessageFlow_" name="XI" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -3336,7 +5211,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      DATASTORE: `<bpmn2:messageFlow id="MessageFlow_" name="DataStore" sourceRef="" targetRef="">
+            DATASTORE: `<bpmn2:messageFlow id="MessageFlow_" name="DataStore" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -3424,7 +5299,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      PROCESSDIRECT: `<bpmn2:messageFlow id="MessageFlow_" name="ProcessDirect" sourceRef="" targetRef="">
+            PROCESSDIRECT: `<bpmn2:messageFlow id="MessageFlow_" name="ProcessDirect" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -3492,7 +5367,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      JMS: `<bpmn2:messageFlow id="MessageFlow_" name="JMS" sourceRef="" targetRef="">
+            JMS: `<bpmn2:messageFlow id="MessageFlow_" name="JMS" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -3580,7 +5455,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      ARIBA: `<bpmn2:messageFlow id="MessageFlow_" name="Ariba" sourceRef="" targetRef="">
+            ARIBA: `<bpmn2:messageFlow id="MessageFlow_" name="Ariba" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>systemID</key>
@@ -3704,7 +5579,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      ADVANCEDEVENTMESH: `<bpmn2:messageFlow id="MessageFlow_" name="AdvancedEventMesh" sourceRef="" targetRef="">
+            ADVANCEDEVENTMESH: `<bpmn2:messageFlow id="MessageFlow_" name="AdvancedEventMesh" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -3888,7 +5763,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      DROPBOX: `<bpmn2:messageFlow id="MessageFlow_" name="Dropbox" sourceRef="" targetRef="">
+            DROPBOX: `<bpmn2:messageFlow id="MessageFlow_" name="Dropbox" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -3988,7 +5863,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      MICROSOFT_SHAREPOINT: `<bpmn2:messageFlow id="MessageFlow_" name="MicrosoftSharePoint" sourceRef="" targetRef="">
+            MICROSOFT_SHAREPOINT: `<bpmn2:messageFlow id="MessageFlow_" name="MicrosoftSharePoint" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>hostName</key>
@@ -4108,7 +5983,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SLACK: `  <bpmn2:messageFlow id="MessageFlow_" name="Slack" sourceRef="" targetRef="">
+            SLACK: `  <bpmn2:messageFlow id="MessageFlow_" name="Slack" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -4172,7 +6047,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      AMQP_TCP: `<bpmn2:messageFlow id="MessageFlow_" name="AMQP" sourceRef="" targetRef="">
+            AMQP_TCP: `<bpmn2:messageFlow id="MessageFlow_" name="AMQP" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -4300,7 +6175,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      AMQP_WEBSOCKET: `<bpmn2:messageFlow id="MessageFlow_" name="AMQP" sourceRef="" targetRef="">
+            AMQP_WEBSOCKET: `<bpmn2:messageFlow id="MessageFlow_" name="AMQP" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -4424,7 +6299,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      SUCCESSFACTORS_SOAP: `  <bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
+            SUCCESSFACTORS_SOAP: `  <bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -4556,7 +6431,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SUCCESSFACTORS_REST: `  <bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
+            SUCCESSFACTORS_REST: `  <bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -4656,7 +6531,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SMB: `<bpmn2:messageFlow id="MessageFlow_" name="SMB" sourceRef="" targetRef="">
+            SMB: `<bpmn2:messageFlow id="MessageFlow_" name="SMB" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>maximumReconnect</key>
@@ -4804,7 +6679,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      RABBITMQ: `    <bpmn2:messageFlow id="MessageFlow_" name="RabbitMQ" sourceRef="" targetRef="">
+            RABBITMQ: `    <bpmn2:messageFlow id="MessageFlow_" name="RabbitMQ" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>prefetched</key>
@@ -4916,7 +6791,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      KAFKA: `<bpmn2:messageFlow id="MessageFlow_4" name="Kafka" sourceRef="Participant_1" targetRef="StartEvent_2">
+            KAFKA: `<bpmn2:messageFlow id="MessageFlow_4" name="Kafka" sourceRef="Participant_1" targetRef="StartEvent_2">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -5052,9 +6927,1516 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-    },
-    ReceiverAdaptors: {
-      HTTP: `<bpmn2:messageFlow id="MessageFlow_" name="HTTP" sourceRef="" targetRef="">
+            GOOGLECLOUDSTORAGE: `<bpmn2:messageFlow id="MessageFlow_" name="GoogleCloudStorage" sourceRef="" targetRef="">
+    <bpmn2:extensionElements>
+        <ifl:property>
+            <key>bucketName</key>
+            <value>{{MessageFlow_bucketName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>encryptionKey</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>GoogleCloudStorage</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>useSa</key>
+            <value>{{MessageFlow_useSa}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>customEncryption</key>
+            <value>{{MessageFlow_customEncryption}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>maxResults</key>
+            <value>{{MessageFlow_maxResults}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destKmsKeyName</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>host</key>
+            <value>{{MessageFlow_host}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>options</key>
+            <value>{{MessageFlow_options}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>socketTimeout</key>
+            <value>{{MessageFlow_socketTimeout}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>searchPattern</key>
+            <value>*</value>
+        </ifl:property>
+        <ifl:property>
+            <key>archiveWaitTime</key>
+            <value>{{MessageFlow_archiveWaitTime}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>audience</key>
+            <value>{{MessageFlow_audience}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>postProcessAction</key>
+            <value>{{MessageFlow_postProcessAction}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>clientEmail</key>
+            <value>{{MessageFlow_clientEmail}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>componentVersion</key>
+            <value>1.1</value>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Sender</value>
+        </ifl:property>
+        <ifl:property>
+            <key>delay</key>
+            <value>{{MessageFlow_delay}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>responseHeaders</key>
+            <value>{{MessageFlow_responseHeaders}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destEncryptionKey</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>HTTPS</value>
+        </ifl:property>
+        <ifl:property>
+            <key>queryParam</key>
+            <value>{{MessageFlow_queryParam}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::GoogleCloudStorage/vendor::rojoconsultancy.com/tp::HTTPS/mp::REST/direction::Sender/version::1.1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>saUrl</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthUrl</key>
+            <value>{{MessageFlow_oauthUrl}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>archiveObjName</key>
+            <value>{{MessageFlow_archiveObjName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>reuseConnection</key>
+            <value>{{MessageFlow_reuseConnection}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destSameBucket</key>
+            <value>{{MessageFlow_destSameBucket}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>entraCredName</key>
+            <value>{{MessageFlow_entraCredName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>scopeSts</key>
+            <value>{{MessageFlow_scopeSts}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>directory</key>
+            <value>{{MessageFlow_directory}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>recursive</key>
+            <value>{{MessageFlow_recursive}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>external</value>
+        </ifl:property>
+        <ifl:property>
+            <key>locationId</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>scope</key>
+            <value>{{MessageFlow_scope}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>stsTokenUrl</key>
+            <value>{{MessageFlow_stsTokenUrl}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageExpiryIdemRepo</key>
+            <value>{{MessageFlow_messageExpiryIdemRepo}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>connectionTimeout</key>
+            <value>{{MessageFlow_connectionTimeout}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>REST</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Sender</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destCustomEncryption</key>
+            <value>{{MessageFlow_destCustomEncryption}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>GoogleCloudStorage</value>
+        </ifl:property>
+        <ifl:property>
+            <key>proxyType</key>
+            <value>{{MessageFlow_proxyType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Vendor</key>
+            <value>rojoconsultancy.com</value>
+        </ifl:property>
+        <ifl:property>
+            <key>delegates</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>scopeSa</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>destEncryptionKeyType</key>
+            <value>{{MessageFlow_destEncryptionKeyType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>privateKey</key>
+            <value>{{MessageFlow_privateKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destObjFolder</key>
+            <value>{{MessageFlow_destObjFolder}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>authenticationType</key>
+            <value>{{MessageFlow_authenticationType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>credentialName</key>
+            <value>{{MessageFlow_credentialName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destBucketName</key>
+            <value>{{MessageFlow_destBucketName}}</value>
+        </ifl:property>
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            MICROSOFTONEDRIVE: `<bpmn2:messageFlow id="MessageFlow_" name="MicrosoftOneDrive" sourceRef="" targetRef="">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>Description</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>senderAuthenticationType</key>
+                    <value>{{MessageFlow_senderAuthenticationType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentNS</key>
+                    <value>sap</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Name</key>
+                    <value>MicrosoftOneDrive</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocolVersion</key>
+                    <value>1.0.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVName</key>
+                    <value>external</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>archiveFile</key>
+                    <value>{{MessageFlow_archiveFile}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>fileNameMandatory</key>
+                    <value>{{MessageFlow_fileNameMandatory}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocol</key>
+                    <value>REST</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>1.0.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>direction</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentType</key>
+                    <value>MicrosoftOneDrive</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>senderDirectoryMandatory</key>
+                    <value>{{MessageFlow_senderDirectoryMandatory}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>senderCredentialName</key>
+                    <value>{{MessageFlow_senderCredentialName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Vendor</key>
+                    <value>SAP</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>timeOut</key>
+                    <value>{{MessageFlow_timeOut}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>system</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>driveId</key>
+                    <value>{{MessageFlow_driveId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>postProcessingFile</key>
+                    <value>{{MessageFlow_postProcessingFile}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>scheduleKey</key>
+                    <value>&lt;row&gt;&lt;cell&gt;dateType&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;timeType&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;dayValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;monthValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;yearValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;onWeekly&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;onMonthly&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;OnEveryMinute&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;fromInterval&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;toInterval&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;timeZone&lt;/cell&gt;&lt;cell&gt;( UTC 0:00 ) Greenwich Mean Time(Etc/GMT)&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;secondValue&lt;/cell&gt;&lt;cell&gt;0&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;minutesValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;hourValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;triggerType&lt;/cell&gt;&lt;cell&gt;simple&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;noOfSchedules&lt;/cell&gt;&lt;cell&gt;1&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;schedule1&lt;/cell&gt;&lt;cell&gt;fireNow=true&lt;/cell&gt;&lt;/row&gt;</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>bodySize</key>
+                    <value>{{MessageFlow_bodySize}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>keepFile</key>
+                    <value>{{MessageFlow_keepFile}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocol</key>
+                    <value>HTTP</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::MicrosoftOneDrive/vendor::SAP/tp::HTTP/mp::REST/direction::Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>senderResponseFormat</key>
+                    <value>{{MessageFlow_senderResponseFormat}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.0.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>raiseException</key>
+                    <value>{{MessageFlow_raiseException}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+        </bpmn2:messageFlow>`,
+            SPLUNK: `<bpmn2:messageFlow id="MessageFlow_15" name="Splunk" sourceRef="Participant_1" targetRef="StartEvent_2">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>Description</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentNS</key>
+                    <value>sap</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>searchMode</key>
+                    <value>{{MessageFlow_searchMode}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>earliestTime</key>
+                    <value>{{MessageFlow_earliestTime}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>timeout</key>
+                    <value>{{MessageFlow_timeout}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>senderPostUseCaseOperation</key>
+                    <value>{{MessageFlow_senderPostUseCaseOperation}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Name</key>
+                    <value>Splunk</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocolVersion</key>
+                    <value>1.0.5</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>senderAdditionalProp</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVName</key>
+                    <value>external</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>search</key>
+                    <value>{{MessageFlow_search}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>searchTimeRange</key>
+                    <value>{{MessageFlow_searchTimeRange}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>credential</key>
+                    <value>{{MessageFlow_credential}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>locationId</key>
+                    <value>{{MessageFlow_locationId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>senderProxyType</key>
+                    <value>{{MessageFlow_senderProxyType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocol</key>
+                    <value>REST</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>1.0.5</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>direction</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>unitOfMeasureLatest</key>
+                    <value>{{MessageFlow_unitOfMeasureLatest}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentType</key>
+                    <value>Splunk</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>urlInternet</key>
+                    <value>{{MessageFlow_urlInternet}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>unitOfMeasure</key>
+                    <value>{{MessageFlow_unitOfMeasure}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Vendor</key>
+                    <value>SAP</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>url</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>condition</key>
+                    <value>{{MessageFlow_condition}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>system</key>
+                    <value>Outlook</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>scheduleKey</key>
+                    <value>&lt;row&gt;&lt;cell&gt;dateType&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;timeType&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;dayValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;monthValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;yearValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;onWeekly&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;onMonthly&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;OnEveryMinute&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;fromInterval&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;toInterval&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;timeZone&lt;/cell&gt;&lt;cell&gt;( UTC 0:00 ) Greenwich Mean Time(Etc/GMT)&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;secondValue&lt;/cell&gt;&lt;cell&gt;0&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;minutesValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;hourValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;triggerType&lt;/cell&gt;&lt;cell&gt;simple&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;noOfSchedules&lt;/cell&gt;&lt;cell&gt;1&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;schedule1&lt;/cell&gt;&lt;cell&gt;fireNow=true&lt;/cell&gt;&lt;/row&gt;</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocol</key>
+                    <value>HTTPS</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>latestTime</key>
+                   <value>{{MessageFlow_latestTime}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::Splunk/vendor::SAP/tp::HTTPS/mp::REST/direction::Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>senderAuthType</key>
+                    <value>{{MessageFlow_senderAuthType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tokenValue</key>
+                    <value>{{MessageFlow_tokenValue}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>senderResponseFormat</key>
+                    <value>{{MessageFlow_senderResponseFormat}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.0.5</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>username</key>
+                    <value>{{MessageFlow_username}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+        </bpmn2:messageFlow>
+`,
+            AS2: `<bpmn2:messageFlow id="MessageFlow_" name="AS2" sourceRef="" targetRef="">
+    <bpmn2:extensionElements>
+        <ifl:property>
+            <key>mdnProxyPort</key>
+            <value>{{MessageFlow_mdnProxyPort}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>mdnTimeout</key>
+            <value>{{MessageFlow_mdnTimeout}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>mdnPrivateKeyAlias</key>
+            <value>{{MessageFlow_mdnPrivateKeyAlias}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>maximumAttachmentSize</key>
+            <value>{{MessageFlow_maximumAttachmentSize}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>privateKeyAliasForMDNSigning</key>
+            <value>{{MessageFlow_privateKeyAliasForMDNSigning}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>mdnLocationID</key>
+            <value>{{MessageFlow_mdnLocationID}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>AS2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>mdnAuthenticationType</key>
+            <value>{{MessageFlow_mdnAuthenticationType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>as2MsgIdDupCheck</key>
+            <value>{{MessageFlow_as2MsgIdDupCheck}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>expectedMessageIDRight</key>
+            <value>{{MessageFlow_expectedMessageIDRight}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>partnerAS2Name</key>
+            <value>{{MessageFlow_partnerAS2Name}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>as2PidSource</key>
+            <value>{{MessageFlow_as2PidSource}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>maximumBodySize</key>
+            <value>{{MessageFlow_maximumBodySize}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MaxRetryInterval</key>
+            <value>{{MessageFlow_MaxRetryInterval}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>mdnProxyHost</key>
+            <value>{{MessageFlow_mdnProxyHost}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>componentVersion</key>
+            <value>1.16</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ExponentialBackoff</key>
+            <value>{{MessageFlow_ExponentialBackoff}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Sender</value>
+        </ifl:property>
+        <ifl:property>
+            <key>verificationOption</key>
+            <value>{{MessageFlow_verificationOption}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>HTTP</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::AS2/tp::HTTP/mp::AS2/direction::Sender/version::1.16.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>propagateMDNDetails</key>
+            <value>{{MessageFlow_propagateMDNDetails}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>mdnUserCredentialAlias</key>
+            <value>{{MessageFlow_mdnUserCredentialAlias}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ownAS2Name</key>
+            <value>{{MessageFlow_ownAS2Name}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>negativeMDNForFailures</key>
+            <value>{{MessageFlow_negativeMDNForFailures}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>doDecryption</key>
+            <value>{{MessageFlow_doDecryption}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>signatureEncoding</key>
+            <value>{{MessageFlow_signatureEncoding}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>mdnProxyType</key>
+            <value>{{MessageFlow_mdnProxyType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>useDeadLetterQueue</key>
+            <value>{{MessageFlow_useDeadLetterQueue}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>publicKeyRootAliasForVerification</key>
+            <value>{{MessageFlow_publicKeyRootAliasForVerification}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>SAP BASIS 7.31</value>
+        </ifl:property>
+        <ifl:property>
+            <key>fileNamePersistDuration</key>
+            <value>1440</value>
+        </ifl:property>
+        <ifl:property>
+            <key>publicKeyAliasForVerification</key>
+            <value>{{MessageFlow_publicKeyAliasForVerification}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>fileNameMandatoryCheck</key>
+            <value>{{MessageFlow_fileNameMandatoryCheck}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>encryptRMPersistence</key>
+            <value>{{MessageFlow_encryptRMPersistence}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>AS2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Sender</value>
+        </ifl:property>
+        <ifl:property>
+            <key>clientCertificates</key>
+            <value>{{MessageFlow_clientCertificates}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>AS2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>address</key>
+            <value>{{MessageFlow_address}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>as2MsgIdDupCheckResponse</key>
+            <value>{{MessageFlow_as2MsgIdDupCheckResponse}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>expectedMessageIDLeft</key>
+            <value>{{MessageFlow_expectedMessageIDLeft}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageSubject</key>
+            <value>{{MessageFlow_messageSubject}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>fileNameDupCheck</key>
+            <value>{{MessageFlow_fileNameDupCheck}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>numberConcurrentProcesses</key>
+            <value>{{MessageFlow_numberConcurrentProcesses}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>as2MsgIdPersistDuration</key>
+            <value>1440</value>
+        </ifl:property>
+        <ifl:property>
+            <key>QualityOfService</key>
+            <value>{{MessageFlow_QualityOfService}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>RetryInterval</key>
+            <value>{{MessageFlow_RetryInterval}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>userRole</key>
+            <value>{{MessageFlow_userRole}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>fileNameDupCheckResponse</key>
+            <value>{{MessageFlow_fileNameDupCheckResponse}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>senderAuthType</key>
+            <value>{{MessageFlow_senderAuthType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>privateKeyAliasForDecryption</key>
+            <value>{{MessageFlow_privateKeyAliasForDecryption}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>decryptionConfigurationType</key>
+            <value>{{MessageFlow_decryptionConfigurationType}}</value>
+        </ifl:property>
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            SOLACEPUBSUBPLUS: `<bpmn2:messageFlow id="MessageFlow_" name="SolacePubSubPlus" sourceRef="" targetRef="">
+    <bpmn2:extensionElements>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>oauth2ClientCredentialsCredentialName</key>
+            <value>{{MessageFlow_oauth2ClientCredentialsCredentialName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthClientId</key>
+            <value>{{MessageFlow_oauthClientId}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>instanceLockEnabled</key>
+            <value>{{MessageFlow_instanceLockEnabled}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthRefreshToken</key>
+            <value>{{MessageFlow_oauthRefreshToken}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>SolacePubSubPlus</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.3.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>external</value>
+        </ifl:property>
+        <ifl:property>
+            <key>dteTopicName</key>
+            <value>{{MessageFlow_dteTopicName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>password</key>
+            <value>{{MessageFlow_password}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthAccessToken</key>
+            <value>{{MessageFlow_oauthAccessToken}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageVpn</key>
+            <value>{{MessageFlow_messageVpn}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthRefreshTokenUrl</key>
+            <value>{{MessageFlow_oauthRefreshTokenUrl}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>host</key>
+            <value>{{MessageFlow_host}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>selector</key>
+            <value>{{MessageFlow_selector}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>jcsmpProperties</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>SMF</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.3.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Sender</value>
+        </ifl:property>
+        <ifl:property>
+            <key>topicEndpointName</key>
+            <value>{{MessageFlow_topicEndpointName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>SolacePubSubPlus</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageRetryInitialDelayInterval</key>
+            <value>{{MessageFlow_messageRetryInitialDelayInterval}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>keyStoreAlias</key>
+            <value>{{MessageFlow_keyStoreAlias}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthCredentialType</key>
+            <value>{{MessageFlow_oauthCredentialType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>consumerMode</key>
+            <value>{{MessageFlow_consumerMode}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageRetryDelayIntervalMultiplier</key>
+            <value>{{MessageFlow_messageRetryDelayIntervalMultiplier}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Vendor</key>
+            <value>Solace</value>
+        </ifl:property>
+        <ifl:property>
+            <key>componentVersion</key>
+            <value>1.3</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauth2AuthorizationCodeCredentialName</key>
+            <value>{{MessageFlow_oauth2AuthorizationCodeCredentialName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>parallelConsumers</key>
+            <value>{{MessageFlow_parallelConsumers}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>maxMessageProcessingAttempts</key>
+            <value>{{MessageFlow_maxMessageProcessingAttempts}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>failedMessageSettlementOutcome</key>
+            <value>{{MessageFlow_failedMessageSettlementOutcome}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageRetryMaxDelayInterval</key>
+            <value>{{MessageFlow_messageRetryMaxDelayInterval}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>topicSubscriptions</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Sender</value>
+        </ifl:property>
+        <ifl:property>
+            <key>queueName</key>
+            <value>{{MessageFlow_queueName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ackMode</key>
+            <value>{{MessageFlow_ackMode}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>accessTokenFetchIntervalInSecs</key>
+            <value>{{MessageFlow_accessTokenFetchIntervalInSecs}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>TCP</value>
+        </ifl:property>
+        <ifl:property>
+            <key>authenticationType</key>
+            <value>{{MessageFlow_authenticationType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::SolacePubSubPlus/vendor::Solace/tp::TCP/mp::SMF/direction::Sender/version::1.3.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>trustStoreAlias</key>
+            <value>{{MessageFlow_trustStoreAlias}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.3.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>username</key>
+            <value>{{MessageFlow_username}}</value>
+        </ifl:property>
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            MAILIMAP4: `<bpmn2:messageFlow id="MessageFlow_" name="Mail" sourceRef="" targetRef="">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>server</key>
+                    <value>{{MessageFlow_server}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>disconnect</key>
+                    <value>{{MessageFlow_disconnect}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Description</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>archiveMailFolder</key>
+                    <value>{{MessageFlow_archiveMailFolder}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>auth</key>
+                    <value>{{MessageFlow_auth}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentNS</key>
+                    <value>sap</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>selectionReadFlag</key>
+                    <value>{{MessageFlow_selectionReadFlag}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ssl</key>
+                    <value>{{MessageFlow_ssl}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>timeout</key>
+                    <value>{{MessageFlow_timeout}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Name</key>
+                    <value>Mail</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocolVersion</key>
+                    <value>1.13.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVName</key>
+                    <value>external</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyPort</key>
+                    <value>8080</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>postProcessing</key>
+                    <value>{{MessageFlow_postProcessing}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>locationId</key>
+                    <value>{{MessageFlow_locationId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>mimeDecodeHeaders</key>
+                    <value>{{MessageFlow_mimeDecodeHeaders}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>maxMessagesPerPoll</key>
+                    <value>{{MessageFlow_maxMessagesPerPoll}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocol</key>
+                    <value>Not Applicable</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>1.13.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>direction</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentType</key>
+                    <value>Mail</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>lockDuration</key>
+                    <value>{{MessageFlow_lockDuration}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyProtocol</key>
+                    <value>socks5</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyType</key>
+                    <value>{{MessageFlow_proxyType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyAlias</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.13</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>removeAttachments</key>
+                    <value>{{MessageFlow_removeAttachments}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyHost</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>forwardOriginalMail</key>
+                    <value>{{MessageFlow_forwardOriginalMail}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>system</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>folder</key>
+                    <value>{{MessageFlow_folder}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>scheduleKey</key>
+                    <value>&lt;row&gt;&lt;cell&gt;dayValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;monthValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;yearValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;dateType&lt;/cell&gt;&lt;cell&gt;DAILY&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;secondValue&lt;/cell&gt;&lt;cell&gt;0&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;minutesValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;hourValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;toInterval&lt;/cell&gt;&lt;cell&gt;24&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;fromInterval&lt;/cell&gt;&lt;cell&gt;0&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;OnEverySecond&lt;/cell&gt;&lt;cell&gt;10&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;timeType&lt;/cell&gt;&lt;cell&gt;TIME_SECOND_INTERVAL&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;timeZone&lt;/cell&gt;&lt;cell&gt;( UTC 0:00 ) Greenwich Mean Time(Etc/GMT)&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;throwExceptionOnExpiry&lt;/cell&gt;&lt;cell&gt;true&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;second&lt;/cell&gt;&lt;cell&gt;0/10&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;minute&lt;/cell&gt;&lt;cell&gt;*&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;hour&lt;/cell&gt;&lt;cell&gt;0-24&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;day_of_month&lt;/cell&gt;&lt;cell&gt;?&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;month&lt;/cell&gt;&lt;cell&gt;*&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;dayOfWeek&lt;/cell&gt;&lt;cell&gt;*&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;year&lt;/cell&gt;&lt;cell&gt;*&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;startAt&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;endAt&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;attributeBehaviour&lt;/cell&gt;&lt;cell&gt;isScheduleOnDayRequired,isScheduleRecurRequired&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;triggerType&lt;/cell&gt;&lt;cell&gt;cron&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;noOfSchedules&lt;/cell&gt;&lt;cell&gt;1&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;schedule1&lt;/cell&gt;&lt;cell&gt;0/10+*+0-23+?+*+*+*&amp;amp;trigger.timeZone=Etc/GMT&lt;/cell&gt;&lt;/row&gt;</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocol</key>
+                    <value>IMAP</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tokenCredential</key>
+                    <value>{{MessageFlow_tokenCredential}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::sap:Mail/tp::IMAP/mp::Not Applicable/direction::Sender/version::1.13.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>user</key>
+                    <value>{{MessageFlow_user}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.13.0</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+        </bpmn2:messageFlow>`,
+            MAILPOP3: `<bpmn2:messageFlow id="MessageFlow_" name="Mail" sourceRef="" targetRef="">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>server</key>
+                    <value>{{MessageFlow_server}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>disconnect</key>
+                    <value>{{MessageFlow_disconnect}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Description</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>auth</key>
+                    <value>{{MessageFlow_auth}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentNS</key>
+                    <value>sap</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ssl</key>
+                    <value>{{MessageFlow_ssl}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>timeout</key>
+                    <value>{{MessageFlow_timeout}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Name</key>
+                    <value>Mail</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocolVersion</key>
+                    <value>1.13.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVName</key>
+                    <value>external</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyPort</key>
+                    <value>8080</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>postProcessing</key>
+                    <value>{{MessageFlow_postProcessing}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>locationId</key>
+                    <value>{{MessageFlow_locationId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>mimeDecodeHeaders</key>
+                    <value>{{MessageFlow_mimeDecodeHeaders}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>maxMessagesPerPoll</key>
+                    <value>{{MessageFlow_maxMessagesPerPoll}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocol</key>
+                    <value>Not Applicable</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>1.13.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>direction</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentType</key>
+                    <value>Mail</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyProtocol</key>
+                    <value>socks5</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>lockDuration</key>
+                    <value>{{MessageFlow_lockDuration}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyType</key>
+                    <value>{{MessageFlow_proxyType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyAlias</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.11</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>removeAttachments</key>
+                    <value>{{MessageFlow_removeAttachments}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyHost</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>forwardOriginalMail</key>
+                    <value>{{MessageFlow_forwardOriginalMail}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>system</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>scheduleKey</key>
+                    <value>&lt;row&gt;&lt;cell&gt;dayValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;monthValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;yearValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;dateType&lt;/cell&gt;&lt;cell&gt;DAILY&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;secondValue&lt;/cell&gt;&lt;cell&gt;0&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;minutesValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;hourValue&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;toInterval&lt;/cell&gt;&lt;cell&gt;24&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;fromInterval&lt;/cell&gt;&lt;cell&gt;0&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;OnEverySecond&lt;/cell&gt;&lt;cell&gt;10&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;timeType&lt;/cell&gt;&lt;cell&gt;TIME_SECOND_INTERVAL&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;timeZone&lt;/cell&gt;&lt;cell&gt;( UTC 0:00 ) Greenwich Mean Time(Etc/GMT)&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;throwExceptionOnExpiry&lt;/cell&gt;&lt;cell&gt;true&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;second&lt;/cell&gt;&lt;cell&gt;0/10&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;minute&lt;/cell&gt;&lt;cell&gt;*&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;hour&lt;/cell&gt;&lt;cell&gt;0-24&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;day_of_month&lt;/cell&gt;&lt;cell&gt;?&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;month&lt;/cell&gt;&lt;cell&gt;*&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;dayOfWeek&lt;/cell&gt;&lt;cell&gt;*&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;year&lt;/cell&gt;&lt;cell&gt;*&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;startAt&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;endAt&lt;/cell&gt;&lt;cell&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;attributeBehaviour&lt;/cell&gt;&lt;cell&gt;isRunOnceRequired,isScheduleOnDayRequired,isScheduleRecurRequired&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;triggerType&lt;/cell&gt;&lt;cell&gt;cron&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;noOfSchedules&lt;/cell&gt;&lt;cell&gt;1&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell&gt;schedule1&lt;/cell&gt;&lt;cell&gt;0/10+*+0-23+?+*+*+*&amp;amp;trigger.timeZone=Etc/GMT&lt;/cell&gt;&lt;/row&gt;</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocol</key>
+                    <value>POP3</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::sap:Mail/tp::POP3/mp::Not Applicable/direction::Sender/version::1.11.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>user</key>
+                    <value>{{MessageFlow_user}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.13.0</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+        </bpmn2:messageFlow>`,
+            AMAZONWEBSERVICESS3: `<bpmn2:messageFlow id="MessageFlow_58" name="AmazonWebServices" sourceRef="Participant_1" targetRef="StartEvent_2">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>duplicationCheck</key>
+                    <value>{{MessageFlow_duplicationCheck}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>bucketName</key>
+                    <value>{{MessageFlow_bucketName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>fileName</key>
+                    <value>{{MessageFlow_fileName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>onlyProcessingIfReadingSucceedsS3</key>
+                    <value>{{MessageFlow_onlyProcessingIfReadingSucceedsS3}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3ServerSideEncryptionForArchive</key>
+                   <value>{{MessageFlow_s3ServerSideEncryptionForArchive}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>messageExpirationPeriod</key>
+                    <value>{{MessageFlow_messageExpirationPeriod}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Description</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentNS</key>
+                    <value>sap</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>regionName</key>
+                    <value>{{MessageFlow_regionName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3OptionalMetadata</key>
+                    <value>{{MessageFlow_s3OptionalMetadata}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Name</key>
+                    <value>AmazonWebServices</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocolVersion</key>
+                    <value>1.2.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVName</key>
+                    <value>external</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>postProcessing</key>
+                    <value>{{MessageFlow_postProcessing}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>requesterPays</key>
+                    <value>{{MessageFlow_requesterPays}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3ServerSideEncryptionCustomerKeyForArchive</key>
+                    <value>{{MessageFlow_s3ServerSideEncryptionCustomerKeyForArchive}}</value>
+
+                </ifl:property>
+                <ifl:property>
+                    <key>sorting</key>
+                    <value>{{MessageFlow_sorting}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3CustomMetadataTableForArchive</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>host</key>
+                    <value>{{MessageFlow_host}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>includeSubDirectories</key>
+                    <value>{{MessageFlow_includeSubDirectories}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3PreSignedUrlMethod</key>
+                    <value>{{MessageFlow_s3PreSignedUrlMethod}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3ServerSideEncryptionKmsKeyIDForArchive</key>
+                    <value>{{MessageFlow_s3ServerSideEncryptionKmsKeyIDForArchive}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocol</key>
+                    <value>S3</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>1.2.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>direction</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3PreSignedUrl</key>
+                    <value>{{MessageFlow_s3PreSignedUrl}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentType</key>
+                    <value>AmazonWebServices</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3DuplicationKey</key>
+                    <value>s3ObjectKey</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>secretKey</key>
+                    <value>{{MessageFlow_secretKey}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3AppendTimestamp</key>
+                    <value>{{MessageFlow_s3AppendTimestamp}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Vendor</key>
+                    <value>rojoconsultancy.com</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>archiveFolder</key>
+                    <value>{{MessageFlow_archiveFolder}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3DecryptionKey</key>
+                    <value>{{MessageFlow_s3DecryptionKey}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>system</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>delay</key>
+                    <value>{{MessageFlow_delay}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>connectViaSdk</key>
+                    <value>{{MessageFlow_connectViaSdk}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>archiveBucket</key>
+                    <value>{{MessageFlow_archiveBucket}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>accessKey</key>
+                    <value>{{MessageFlow_accessKey}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>applyEncryptionWhenArchiving</key>
+                    <value>{{MessageFlow_applyEncryptionWhenArchiving}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocol</key>
+                    <value>HTTPS</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>folderName</key>
+                    <value>{{MessageFlow_folderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>s3PreSignedUrlDuration</key>
+                    <value>{{MessageFlow_s3PreSignedUrlDuration}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::AmazonWebServices/vendor::rojoconsultancy.com/tp::HTTPS/mp::S3/direction::Sender/version::1.1.3</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.2.2</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+        </bpmn2:messageFlow>
+`,
+            AMAZONWEBSERVICESSQS: `<bpmn2:messageFlow id="MessageFlow_61" name="AmazonWebServices" sourceRef="Participant_1" targetRef="StartEvent_2">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>messageExpirationPeriod</key>
+                    <value>{{MessageFlow_messageExpirationPeriod}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Description</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>sqsWaitTimeSeconds</key>
+                    <value>{{MessageFlow_sqsWaitTimeSeconds}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>sqsPostProcessing</key>
+                    <value>{{MessageFlow_sqsPostProcessing}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentNS</key>
+                    <value>sap</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>regionName</key>
+                    <value>{{MessageFlow_regionName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>sqsVisibilityTimeout</key>
+                    <value>{{MessageFlow_sqsVisibilityTimeout}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Name</key>
+                    <value>AmazonWebServices</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocolVersion</key>
+                    <value>1.2.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVName</key>
+                    <value>external</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>sqsDuplicationCheck</key>
+                    <value>{{MessageFlow_sqsDuplicationCheck}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>host</key>
+                    <value>{{MessageFlow_host}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocol</key>
+                    <value>SQS</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>1.2.2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>onlyProcessingIfReadingSucceeds</key>
+                    <value>{{MessageFlow_onlyProcessingIfReadingSucceeds}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>direction</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentType</key>
+                    <value>AmazonWebServices</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>secretKey</key>
+                    <value>{{MessageFlow_secretKey}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>sqsOptionalMetadata</key>
+                    <value>{{MessageFlow_sqsOptionalMetadata}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Vendor</key>
+                    <value>rojoconsultancy.com</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>accountNumber</key>
+                    <value>{{MessageFlow_accountNumber}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>system</key>
+                    <value>Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>queueName</key>
+                    <value>{{MessageFlow_queueName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>delay</key>
+                    <value>{{MessageFlow_delay}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>accessKey</key>
+                    <value>{{MessageFlow_accessKey}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>sqsMaxNumberOfMessages</key>
+                    <value>{{MessageFlow_sqsMaxNumberOfMessages}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocol</key>
+                    <value>HTTPS</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::AmazonWebServices/vendor::rojoconsultancy.com/tp::HTTPS/mp::SQS/direction::Sender</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.2.2</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+        </bpmn2:messageFlow>`,
+        },
+        ReceiverAdaptors: {
+            HTTP: `<bpmn2:messageFlow id="MessageFlow_" name="HTTP" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
             <ifl:property>
                 <key>Description</key>
@@ -5226,7 +8608,7 @@ export const SourceXML = [
             </ifl:property>
         </bpmn2:extensionElements>
          </bpmn2:messageFlow>`,
-      SFTP: `<bpmn2:messageFlow id="MessageFlow_" name="SFTP" sourceRef="" targetRef="">
+            SFTP: `<bpmn2:messageFlow id="MessageFlow_" name="SFTP" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>disconnect</key>
@@ -5394,7 +8776,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      FTP: `<bpmn2:messageFlow id="MessageFlow_" name="FTP" sourceRef="" targetRef="">
+            FTP: `<bpmn2:messageFlow id="MessageFlow_" name="FTP" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>disconnect</key>
@@ -5542,7 +8924,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      AMQP_TCP: `<bpmn2:messageFlow id="MessageFlow_" name="AMQP" sourceRef="" targetRef="">
+            AMQP_TCP: `<bpmn2:messageFlow id="MessageFlow_" name="AMQP" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -5666,7 +9048,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      AMQP_WEBSOCKET: `<bpmn2:messageFlow id="MessageFlow_" name="AMQP" sourceRef="" targetRef="">
+            AMQP_WEBSOCKET: `<bpmn2:messageFlow id="MessageFlow_" name="AMQP" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -5794,7 +9176,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      SUCCESSFACTORS_SOAP: ` <bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
+            SUCCESSFACTORS_SOAP: ` <bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>sfsfSOAPReceiverDataCenterUrl</key>
@@ -5930,7 +9312,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SUCCESSFACTORS_REST: `  <bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
+            SUCCESSFACTORS_REST: `  <bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -6030,7 +9412,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SUCCESSFACTORS_ODATAV4: `<bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
+            SUCCESSFACTORS_ODATAV4: `<bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -6130,7 +9512,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SUCCESSFACTORS_ODATAV2: ` <bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
+            SUCCESSFACTORS_ODATAV2: ` <bpmn2:messageFlow id="MessageFlow_" name="SuccessFactors" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -6294,7 +9676,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      COUPA: `<bpmn2:messageFlow id="MessageFlow_" name="Coupa" sourceRef="" targetRef="">
+            COUPA: `<bpmn2:messageFlow id="MessageFlow_" name="Coupa" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>fileName</key>
@@ -6462,7 +9844,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      ODATAV2: `<bpmn2:messageFlow id="MessageFlow_" name="OData" sourceRef="" targetRef="">
+            ODATAV2: `<bpmn2:messageFlow id="MessageFlow_" name="OData" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -6654,7 +10036,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      ODATAV4: `<bpmn2:messageFlow id="MessageFlow_" name="OData" sourceRef="" targetRef="">
+            ODATAV4: `<bpmn2:messageFlow id="MessageFlow_" name="OData" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>batchEntities</key>
@@ -6814,7 +10196,7 @@ export const SourceXML = [
         </ifl:property>
         </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SOAP1X: `<bpmn2:messageFlow id="MessageFlow_" name="SOAP" sourceRef="" targetRef="">
+            SOAP1X: `<bpmn2:messageFlow id="MessageFlow_" name="SOAP" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>cleanupHeaders</key>
@@ -7022,7 +10404,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SOAPRM: `<bpmn2:messageFlow id="MessageFlow_" name="SOAP" sourceRef="" targetRef="">
+            SOAPRM: `<bpmn2:messageFlow id="MessageFlow_" name="SOAP" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>cleanupHeaders</key>
@@ -7162,7 +10544,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      IDOC: `<bpmn2:messageFlow id="MessageFlow_" name="IDOC" sourceRef="" targetRef="">
+            IDOC: `<bpmn2:messageFlow id="MessageFlow_" name="IDOC" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>cleanupHeaders</key>
@@ -7290,7 +10672,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      OPENCONNECTORS: `<bpmn2:messageFlow id="MessageFlow_" name="OpenConnectors" sourceRef="" targetRef="">
+            OPENCONNECTORS: `<bpmn2:messageFlow id="MessageFlow_" name="OpenConnectors" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>xmlRequestContentType</key>
@@ -7394,7 +10776,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      NETSUITE_SOAP: `<bpmn2:messageFlow id="MessageFlow_" name="NetSuite" sourceRef="" targetRef="">
+            NETSUITE_SOAP: `<bpmn2:messageFlow id="MessageFlow_" name="NetSuite" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>returnSearchColumns</key>
@@ -7554,7 +10936,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      NETSUITE_RESTLET: `<bpmn2:messageFlow id="MessageFlow_" name="NetSuite" sourceRef="" targetRef="">
+            NETSUITE_RESTLET: `<bpmn2:messageFlow id="MessageFlow_" name="NetSuite" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -7686,7 +11068,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SALESFORCE: `<bpmn2:messageFlow id="MessageFlow_" name="Salesforce" sourceRef="" targetRef="">
+            SALESFORCE: `<bpmn2:messageFlow id="MessageFlow_" name="Salesforce" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>jobResultType</key>
@@ -8114,7 +11496,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      JDBC: `<bpmn2:messageFlow id="MessageFlow_" name="JDBC" sourceRef="" targetRef="">
+            JDBC: `<bpmn2:messageFlow id="MessageFlow_" name="JDBC" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>queryTimeout</key>
@@ -8202,7 +11584,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      RFC: `<bpmn2:messageFlow id="MessageFlow_" name="RFC" sourceRef="" targetRef="">
+            RFC: `<bpmn2:messageFlow id="MessageFlow_" name="RFC" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -8274,7 +11656,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      PROCESSDIRECT: `<bpmn2:messageFlow id="MessageFlow_" name="ProcessDirect" sourceRef="" targetRef="">
+            PROCESSDIRECT: `<bpmn2:messageFlow id="MessageFlow_" name="ProcessDirect" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -8342,7 +11724,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      WORKDAY: `<bpmn2:messageFlow id="MessageFlow_" name="Workday" sourceRef="" targetRef="">
+            WORKDAY: `<bpmn2:messageFlow id="MessageFlow_" name="Workday" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
             <ifl:property>
                 <key>ComponentType</key>
@@ -8434,7 +11816,7 @@ export const SourceXML = [
             </ifl:property>
         </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      ARIBA: `<bpmn2:messageFlow id="MessageFlow_" name="Ariba" sourceRef="" targetRef="">
+            ARIBA: `<bpmn2:messageFlow id="MessageFlow_" name="Ariba" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -8538,7 +11920,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      JMS: `<bpmn2:messageFlow id="MessageFlow_" name="JMS" sourceRef="" targetRef="">
+            JMS: `<bpmn2:messageFlow id="MessageFlow_" name="JMS" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>ComponentType</key>
@@ -8626,7 +12008,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SERVICENOW: `<bpmn2:messageFlow id="MessageFlow_" name="ServiceNow" sourceRef="ServiceTask_1" targetRef="Participant_2">
+            SERVICENOW: `<bpmn2:messageFlow id="MessageFlow_" name="ServiceNow" sourceRef="ServiceTask_1" targetRef="Participant_2">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -8806,7 +12188,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      ADVANCEDEVENTMESH: `<bpmn2:messageFlow id="MessageFlow_" name="AdvancedEventMesh" sourceRef="" targetRef="">
+            ADVANCEDEVENTMESH: `<bpmn2:messageFlow id="MessageFlow_" name="AdvancedEventMesh" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>applicationMessageType</key>
@@ -9018,7 +12400,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      ELSTER: `<bpmn2:messageFlow id="MessageFlow_" name="Elster" sourceRef="" targetRef="">
+            ELSTER: `<bpmn2:messageFlow id="MessageFlow_" name="Elster" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>ComponentType</key>
@@ -9118,7 +12500,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
          </bpmn2:messageFlow>`,
-      IBMMQ_HTTP: `<bpmn2:messageFlow id="MessageFlow_" name="IBMMQ" sourceRef="" targetRef="">
+            IBMMQ_HTTP: `<bpmn2:messageFlow id="MessageFlow_" name="IBMMQ" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -9270,7 +12652,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      IBMMQ_JMS: `<bpmn2:messageFlow id="MessageFlow_" name="IBMMQ" sourceRef="" targetRef="">
+            IBMMQ_JMS: `<bpmn2:messageFlow id="MessageFlow_" name="IBMMQ" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>messageTimeStamp</key>
@@ -9450,7 +12832,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      ANAPLAN: `<bpmn2:messageFlow id="MessageFlow_" name="Anaplan" sourceRef="" targetRef="">
+            ANAPLAN: `<bpmn2:messageFlow id="MessageFlow_" name="Anaplan" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>sourceId</key>
@@ -9626,7 +13008,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      AZURECOSMOSDB: `<bpmn2:messageFlow id="MessageFlow_" name="AzureCosmosDB" sourceRef="" targetRef="">
+            AZURECOSMOSDB: `<bpmn2:messageFlow id="MessageFlow_" name="AzureCosmosDB" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -9766,7 +13148,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      DOCUSIGN: `<bpmn2:messageFlow id="MessageFlow_" name="Docusign" sourceRef="" targetRef="">
+            DOCUSIGN: `<bpmn2:messageFlow id="MessageFlow_" name="Docusign" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>request</key>
@@ -9922,7 +13304,7 @@ export const SourceXML = [
         </ifl:property>
         </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      AS4_EBMS3_PULL: `<bpmn2:messageFlow id="MessageFlow_5" name="AS4" sourceRef="EndEvent_2" targetRef="Participant_2">
+            AS4_EBMS3_PULL: `<bpmn2:messageFlow id="MessageFlow_5" name="AS4" sourceRef="EndEvent_2" targetRef="Participant_2">
             <bpmn2:extensionElements>
         <ifl:property>
             <key>pullReceiptTargetURL</key>
@@ -10110,7 +13492,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      AS4_EBMS3_PUSH: `<bpmn2:messageFlow id="MessageFlow_" name="AS4" sourceRef="" targetRef="">
+            AS4_EBMS3_PUSH: `<bpmn2:messageFlow id="MessageFlow_" name="AS4" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>serviceType</key>
@@ -10350,7 +13732,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SUGARCRM: `<bpmn2:messageFlow id="MessageFlow_" name="SugarCRM" sourceRef="" targetRef="">
+            SUGARCRM: `<bpmn2:messageFlow id="MessageFlow_" name="SugarCRM" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>fileName</key>
@@ -10554,7 +13936,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SHOPIFY_GRAPHQL: `<bpmn2:messageFlow id="MessageFlow_" name="Shopify" sourceRef="" targetRef="">
+            SHOPIFY_GRAPHQL: `<bpmn2:messageFlow id="MessageFlow_" name="Shopify" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ComponentType</key>
@@ -10638,7 +14020,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SHOPIFY_REST: `<bpmn2:messageFlow id="MessageFlow_" name="Shopify" sourceRef="" targetRef="">
+            SHOPIFY_REST: `<bpmn2:messageFlow id="MessageFlow_" name="Shopify" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>listDisputesQueryParameters</key>
@@ -10938,7 +14320,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      HUBSPOT: `<bpmn2:messageFlow id="MessageFlow_4" name="HubSpot" sourceRef="EndEvent_2" targetRef="Participant_2">
+            HUBSPOT: `<bpmn2:messageFlow id="MessageFlow_4" name="HubSpot" sourceRef="EndEvent_2" targetRef="Participant_2">
             <bpmn2:extensionElements>
 				<ifl:property>
 					<key>fileName</key>
@@ -11298,7 +14680,7 @@ export const SourceXML = [
 				</ifl:property>
 			</bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SNOWFLAKE: `<bpmn2:messageFlow id="MessageFlow_" name="Snowflake" sourceRef="" targetRef="">
+            SNOWFLAKE: `<bpmn2:messageFlow id="MessageFlow_" name="Snowflake" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>schema</key>
@@ -11482,8 +14864,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-
-      DROPBOX: `<bpmn2:messageFlow id="MessageFlow_" name="Dropbox" sourceRef="" targetRef="">
+            DROPBOX: `<bpmn2:messageFlow id="MessageFlow_" name="Dropbox" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>archiveDirectory</key>
@@ -11699,7 +15080,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SALESFORCEPUBSUB: `<bpmn2:messageFlow id="MessageFlow_" name="SalesforcePubSub" sourceRef="" targetRef="">
+            SALESFORCEPUBSUB: `<bpmn2:messageFlow id="MessageFlow_" name="SalesforcePubSub" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>issuerAlias</key>
@@ -11823,7 +15204,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      GOOGLEPUBSUB: `<bpmn2:messageFlow id="MessageFlow_" name="GooglePubSub" sourceRef="" targetRef="">
+            GOOGLEPUBSUB: `<bpmn2:messageFlow id="MessageFlow_" name="GooglePubSub" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ackId</key>
@@ -12035,7 +15416,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      TWITTER: `<bpmn2:messageFlow id="MessageFlow_" name="Twitter" sourceRef="" targetRef="">
+            TWITTER: `<bpmn2:messageFlow id="MessageFlow_" name="Twitter" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -12151,7 +15532,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      AMAZONEVENTBRIDGE: `<bpmn2:messageFlow id="MessageFlow_" name="AmazonEventBridge" sourceRef="" targetRef="">
+            AMAZONEVENTBRIDGE: `<bpmn2:messageFlow id="MessageFlow_" name="AmazonEventBridge" sourceRef="" targetRef="">
        <bpmn2:extensionElements>
        <ifl:property>
        <key>Description</key>
@@ -12279,7 +15660,7 @@ export const SourceXML = [
     </ifl:property>
   </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      JIRA: `<bpmn2:messageFlow id="MessageFlow_" name="Jira" sourceRef="" targetRef="">
+            JIRA: `<bpmn2:messageFlow id="MessageFlow_" name="Jira" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>basicCredentials</key>
@@ -12407,7 +15788,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      LDAP: `<bpmn2:messageFlow id="MessageFlow_" name="LDAP" sourceRef="" targetRef="">
+            LDAP: `<bpmn2:messageFlow id="MessageFlow_" name="LDAP" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ldapOperation</key>
@@ -12543,7 +15924,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      MICROSOFT_SHAREPOINT: `<bpmn2:messageFlow id="MessageFlow_" name="MicrosoftSharePoint" sourceRef="" targetRef="">
+            MICROSOFT_SHAREPOINT: `<bpmn2:messageFlow id="MessageFlow_" name="MicrosoftSharePoint" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>directoryMandatory</key>
@@ -12803,7 +16184,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SMB: `<bpmn2:messageFlow id="MessageFlow_" name="SMB" sourceRef="" targetRef="">
+            SMB: `<bpmn2:messageFlow id="MessageFlow_" name="SMB" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>maximumReconnect</key>
@@ -12963,7 +16344,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      MICROSOFT_TEAMS: `<bpmn2:messageFlow id="MessageFlow_" name="MicrosoftTeams" sourceRef="" targetRef="">
+            MICROSOFT_TEAMS: `<bpmn2:messageFlow id="MessageFlow_" name="MicrosoftTeams" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>msAsyncOperationURL</key>
@@ -13127,7 +16508,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      ODC: `<bpmn2:messageFlow id="MessageFlow_" name="ODC" sourceRef="" targetRef="">
+            ODC: `<bpmn2:messageFlow id="MessageFlow_" name="ODC" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>Description</key>
@@ -13243,7 +16624,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      FACEBOOK: `<bpmn2:messageFlow id="MessageFlow_" name="Facebook" sourceRef="" targetRef="">
+            FACEBOOK: `<bpmn2:messageFlow id="MessageFlow_" name="Facebook" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>oAuthAccessToken</key>
@@ -13343,7 +16724,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      GOOGLEBIGQUERY: `<bpmn2:messageFlow id="MessageFlow_" name="GoogleBigQuery" sourceRef="" targetRef="">
+            GOOGLEBIGQUERY: `<bpmn2:messageFlow id="MessageFlow_" name="GoogleBigQuery" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>objectMetadata</key>
@@ -13583,7 +16964,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      XI: `<bpmn2:messageFlow id="MessageFlow_" name="XI" sourceRef="" targetRef="">
+            XI: `<bpmn2:messageFlow id="MessageFlow_" name="XI" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>cleanupHeaders</key>
@@ -13779,7 +17160,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      AMAZONDYNAMODB: `<bpmn2:messageFlow id="MessageFlow_" name="AmazonDynamoDB" sourceRef="" targetRef="">
+            AMAZONDYNAMODB: `<bpmn2:messageFlow id="MessageFlow_" name="AmazonDynamoDB" sourceRef="" targetRef="">
         <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -13939,7 +17320,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      LEANIX_GRAPHQL: `<bpmn2:messageFlow id="MessageFlow_" name="LeanIX" sourceRef="" targetRef="">
+            LEANIX_GRAPHQL: `<bpmn2:messageFlow id="MessageFlow_" name="LeanIX" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>factSheetId</key>
@@ -14059,7 +17440,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      RABBITMQ: `<bpmn2:messageFlow id="MessageFlow_" name="RabbitMQ" sourceRef="" targetRef="">
+            RABBITMQ: `<bpmn2:messageFlow id="MessageFlow_" name="RabbitMQ" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>receiverAuthentication</key>
@@ -14183,7 +17564,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      SLACK: `<bpmn2:messageFlow id="MessageFlow_" name="Slack" sourceRef="" targetRef="">
+            SLACK: `<bpmn2:messageFlow id="MessageFlow_" name="Slack" sourceRef="" targetRef="">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>teamName</key>
@@ -14663,7 +18044,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>`,
-      KAFKA: `<bpmn2:messageFlow id="MessageFlow_5" name="Kafka" sourceRef="EndEvent_2" targetRef="Participant_2">
+            KAFKA: `<bpmn2:messageFlow id="MessageFlow_5" name="Kafka" sourceRef="EndEvent_2" targetRef="Participant_2">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>acknowledgement</key>
@@ -14799,7 +18180,7 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
-      LEANIX_REST: `<bpmn2:messageFlow id="MessageFlow_" name="LeanIX" sourceRef="" targetRef="">
+            LEANIX_REST: `<bpmn2:messageFlow id="MessageFlow_" name="LeanIX" sourceRef="" targetRef="">
     <bpmn2:extensionElements>
         <ifl:property>
             <key>Description</key>
@@ -14911,11 +18292,2041 @@ export const SourceXML = [
         </ifl:property>
     </bpmn2:extensionElements>
 </bpmn2:messageFlow>`,
+            AS2: `<bpmn2:messageFlow id="MessageFlow_" name="AS2" sourceRef="" targetRef="">
+    <bpmn2:extensionElements>
+        <ifl:property>
+            <key>fileName</key>
+            <value>{{MessageFlow_fileName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>receipientURL</key>
+            <value>{{MessageFlow_receipientURL}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>privateKeyAlias</key>
+            <value>{{MessageFlow_privateKeyAlias}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>encryptionAlgorithm</key>
+            <value>DES3</value>
+        </ifl:property>
+        <ifl:property>
+            <key>requestMIC</key>
+            <value>{{MessageFlow_requestMIC}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>AS2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>proxyPort</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>requestMDNSigningAlgorithm</key>
+            <value>SHA1</value>
+        </ifl:property>
+        <ifl:property>
+            <key>keyLength</key>
+            <value>128</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageIDRight</key>
+            <value>{{MessageFlow_messageIDRight}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>partnerAS2Name</key>
+            <value>{{MessageFlow_partnerAS2Name}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>contentType</key>
+            <value>{{MessageFlow_contentType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ownEmailAddress</key>
+            <value>{{MessageFlow_ownEmailAddress}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>doCompression</key>
+            <value>{{MessageFlow_doCompression}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>requestMDNSigning</key>
+            <value>{{MessageFlow_requestMDNSigning}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>componentVersion</key>
+            <value>1.10</value>
+        </ifl:property>
+        <ifl:property>
+            <key>proxyHost</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>urlParametersPattern</key>
+            <value>{{MessageFlow_urlParametersPattern}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>HTTP</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::AS2/tp::HTTP/mp::AS2/direction::Receiver/version::1.10.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>privateKeyAliasForSigning</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>ownAS2Name</key>
+            <value>{{MessageFlow_ownAS2Name}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>publicKeyAliasForEncryption</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>timeout</key>
+            <value>{{MessageFlow_timeout}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>failMessageOnNegativeMDN</key>
+            <value>{{MessageFlow_failMessageOnNegativeMDN}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>SAP BASIS 7.31</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageEncoding</key>
+            <value>{{MessageFlow_messageEncoding}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>doEncryption</key>
+            <value>{{MessageFlow_doEncryption}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>publicKeyAliasForMDNVerification</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>verifyMDNSignature</key>
+            <value>0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>AS2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>AS2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageIDLeft</key>
+            <value>{{MessageFlow_messageIDLeft}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>verifyMIC</key>
+            <value>0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageSubject</key>
+            <value>{{MessageFlow_messageSubject}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>proxyType</key>
+            <value>{{MessageFlow_proxyType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>mdnType</key>
+            <value>{{MessageFlow_mdnType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>userCredentialAlias</key>
+            <value>{{MessageFlow_userCredentialAlias}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>doSigning</key>
+            <value>{{MessageFlow_doSigning}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>signingAlgorithm</key>
+            <value>SHA1</value>
+        </ifl:property>
+        <ifl:property>
+            <key>locationID</key>
+            <value>{{MessageFlow_locationID}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>mdnTargetURL</key>
+            <value>{{MessageFlow_mdnTargetURL}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>authenticationType</key>
+            <value>{{MessageFlow_authenticationType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>customHeadersPattern</key>
+            <value>{{MessageFlow_customHeadersPattern}}</value>
+        </ifl:property>
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            AS2_MDN: `<bpmn2:messageFlow id="MessageFlow_" name="AS2 MDN" sourceRef="" targetRef="">
+    <bpmn2:extensionElements>
+        <ifl:property>
+            <key>ownAS2Name</key>
+            <value>{{MessageFlow_ownAS2Name}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>useDeadLetterQueue</key>
+            <value>{{MessageFlow_useDeadLetterQueue}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>AS2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>failMessageOnNegativeMDN</key>
+            <value>{{MessageFlow_failMessageOnNegativeMDN}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>SAP BASIS 7.31</value>
+        </ifl:property>
+        <ifl:property>
+            <key>partnerAS2Name</key>
+            <value>{{MessageFlow_partnerAS2Name}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>publicKeyAliasForMDNVerification</key>
+            <value>{{MessageFlow_publicKeyAliasForMDNVerification}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>encryptRMPersistence</key>
+            <value>{{MessageFlow_encryptRMPersistence}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>verifyMDNSignature</key>
+            <value>{{MessageFlow_verifyMDNSignature}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>AS2 MDN</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Sender</value>
+        </ifl:property>
+        <ifl:property>
+            <key>clientCertificates</key>
+            <value>{{MessageFlow_clientCertificates}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>AS2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>address</key>
+            <value>{{MessageFlow_address}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>verifyMIC</key>
+            <value>{{MessageFlow_verifyMIC}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MaxRetryInterval</key>
+            <value>{{MessageFlow_MaxRetryInterval}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>componentVersion</key>
+            <value>1.10</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ExponentialBackoff</key>
+            <value>{{MessageFlow_ExponentialBackoff}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Sender</value>
+        </ifl:property>
+        <ifl:property>
+            <key>numberConcurrentProcesses</key>
+            <value>{{MessageFlow_numberConcurrentProcesses}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>pidSource</key>
+            <value>{{MessageFlow_as2PidSource}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>HTTP</value>
+        </ifl:property>
+        <ifl:property>
+            <key>RetryInterval</key>
+            <value>{{MessageFlow_RetryInterval}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::AS2/tp::HTTP/mp::AS2 MDN/direction::Sender/version::1.10.1</value>
+        </ifl:property>
+        <ifl:property>
+            <key>userRole</key>
+            <value>{{MessageFlow_userRole}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>senderAuthType</key>
+            <value>{{MessageFlow_senderAuthType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.0</value>
+        </ifl:property>
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            AMAZONWEBSERVICESS3: `<bpmn2:messageFlow id="MessageFlow_" name="AmazonWebServices" sourceRef="" targetRef="">
+    <bpmn2:extensionElements>
+        <ifl:property>
+            <key>bucketName</key>
+            <value>{{MessageFlow_bucketName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>fileName</key>
+            <value>{{MessageFlow_fileName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>s3ServerSideEncryptionForArchive</key>
+            <value>SSE-S3</value>
+        </ifl:property>
+        <ifl:property>
+            <key>emptyFileHandling</key>
+            <value>{{MessageFlow_emptyFileHandling}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>s3ServerSideEncryptionCustomerKey</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>AmazonWebServices</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>s3ServerSideEncryptionCustomerKeyForArchive</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>s3ServerSideEncryptionKmsKeyID</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>host</key>
+            <value>{{MessageFlow_host}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>contentEncoding</key>
+            <value>{{MessageFlow_contentEncoding}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>s3ReceiverPostProcessing</key>
+            <value>{{MessageFlow_s3ReceiverPostProcessing}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>contentType</key>
+            <value>{{MessageFlow_contentType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>existFileHandling</key>
+            <value>{{MessageFlow_existFileHandling}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>componentVersion</key>
+            <value>1.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>archiveFolder</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>s3DecryptionKey</key>
+            <value>{{MessageFlow_s3DecryptionKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>uploadMessageAttachments</key>
+            <value>{{MessageFlow_uploadMessageAttachments}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>s3ServerSideEncryption</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>listOperationFolderName</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>maxKeys</key>
+            <value>{{MessageFlow_maxKeys}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>archiveBucket</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>accessKey</key>
+            <value>{{MessageFlow_accessKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>HTTPS</value>
+        </ifl:property>
+        <ifl:property>
+            <key>folderName</key>
+            <value>{{MessageFlow_folderName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::AmazonWebServices/vendor::rojoconsultancy.com/tp::HTTPS/mp::S3/direction::Receiver/version::1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>regionName</key>
+            <value>{{MessageFlow_regionName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>external</value>
+        </ifl:property>
+        <ifl:property>
+            <key>storageClass</key>
+            <value>{{MessageFlow_storageClass}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>requesterPays</key>
+            <value>{{MessageFlow_requesterPays}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>s3CustomMetadataTableForArchive</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>s3ServerSideEncryptionKmsKeyIDForArchive</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>S3</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>s3AppendMessageId</key>
+            <value>{{MessageFlow_s3AppendMessageId}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>continuationToken</key>
+            <value>{{MessageFlow_continuationToken}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>AmazonWebServices</value>
+        </ifl:property>
+        <ifl:property>
+            <key>secretKey</key>
+            <value>{{MessageFlow_secretKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>s3AppendTimestamp</key>
+            <value>{{MessageFlow_s3AppendTimestamp}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Vendor</key>
+            <value>rojoconsultancy.com</value>
+        </ifl:property>
+        <ifl:property>
+            <key>readOperationFolderName</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>listOperationIncludeSubDirectories</key>
+            <value>{{MessageFlow_listOperationIncludeSubDirectories}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>connectViaSdk</key>
+            <value>{{MessageFlow_connectViaSdk}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>applyEncryptionWhenArchiving</key>
+            <value>false</value>
+        </ifl:property>
+        <ifl:property>
+            <key>s3CustomMetadataTable</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>sortingForListOperation</key>
+            <value>{{MessageFlow_sortingForListOperation}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>s3ReceiverOperation</key>
+            <value>{{MessageFlow_s3ReceiverOperation}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>readOperationFileName</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>listOperationFileName</key>
+            <value/>
+        </ifl:property>
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            AMAZONWEBSERVICESSQS: `<bpmn2:messageFlow id="MessageFlow_16" name="AmazonWebServices" sourceRef="EndEvent_2" targetRef="Participant_2">
+    <bpmn2:extensionElements>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>regionName</key>
+            <value>{{MessageFlow_regionName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>sqsDelaySeconds</key>
+            <value>{{MessageFlow_sqsDelaySeconds}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageSizeThreshold</key>
+            <value>{{MessageFlow_messageSizeThreshold}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>AmazonWebServices</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>external</value>
+        </ifl:property>
+        <ifl:property>
+            <key>sqsMessageDeduplicationId</key>
+            <value>{{MessageFlow_sqsMessageDeduplicationId}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>bucketForLargerPayload</key>
+            <value>{{MessageFlow_bucketForLargerPayload}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>host</key>
+            <value>{{MessageFlow_host}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>SQS</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>AmazonWebServices</value>
+        </ifl:property>
+        <ifl:property>
+            <key>secretKey</key>
+            <value>{{MessageFlow_secretKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>enableLargePayload</key>
+            <value>{{MessageFlow_enableLargePayload}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Vendor</key>
+            <value>rojoconsultancy.com</value>
+        </ifl:property>
+        <ifl:property>
+            <key>accountNumber</key>
+            <value>{{MessageFlow_accountNumber}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>queueName</key>
+            <value>{{MessageFlow_queueName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>sqsMessageGroupId</key>
+            <value>{{MessageFlow_sqsMessageGroupId}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>accessKey</key>
+            <value>{{MessageFlow_accessKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>sqsCustomMetadataTable</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>HTTPS</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::AmazonWebServices/vendor::rojoconsultancy.com/tp::HTTPS/mp::SQS/direction::Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.2.2</value>
+        </ifl:property>
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            AMAZONWEBSERVICESSWF: `<bpmn2:messageFlow id="MessageFlow_" name="AmazonWebServices" sourceRef="" targetRef="">
+    <bpmn2:extensionElements>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>AmazonWebServices</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>secretKey</key>
+            <value>{{MessageFlow_secretKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>regionName</key>
+            <value>{{MessageFlow_regionName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Vendor</key>
+            <value>rojoconsultancy.com</value>
+        </ifl:property>
+        <ifl:property>
+            <key>swfApiAction</key>
+            <value>{{MessageFlow_swfApiAction}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>AmazonWebServices</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>swfRequestFormat</key>
+            <value>{{MessageFlow_swfRequestFormat}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>external</value>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>accessKey</key>
+            <value>{{MessageFlow_accessKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>host</key>
+            <value>{{MessageFlow_host}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>swfResponseFormat</key>
+            <value>{{MessageFlow_swfResponseFormat}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>HTTPS</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::AmazonWebServices/vendor::rojoconsultancy.com/tp::HTTPS/mp::SWF/direction::Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>SWF</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Receiver</value>
+        </ifl:property>
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            AMAZONWEBSERVICESSNS: `<bpmn2:messageFlow id="MessageFlow_15" name="AmazonWebServices" sourceRef="EndEvent_2" targetRef="Participant_2">
+    <bpmn2:extensionElements>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>subject</key>
+            <value>{{MessageFlow_subject}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>regionName</key>
+            <value>{{MessageFlow_regionName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>responseFormat</key>
+            <value>{{MessageFlow_responseFormat}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageSizeThreshold</key>
+            <value>262144</value>
+        </ifl:property>
+        <ifl:property>
+            <key>snsMessageGroupID</key>
+            <value>{{MessageFlow_snsMessageGroupID}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>AmazonWebServices</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>external</value>
+        </ifl:property>
+        <ifl:property>
+            <key>bucketForLargerPayload</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>host</key>
+            <value>{{MessageFlow_host}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>snsMessageDeduplicationID</key>
+            <value>{{MessageFlow_snsMessageDeduplicationID}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>SNS</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.2.2</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>AmazonWebServices</value>
+        </ifl:property>
+        <ifl:property>
+            <key>secretKey</key>
+            <value>{{MessageFlow_secretKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>enableLargePayload</key>
+            <value>{{MessageFlow_enableLargePayload}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageStructure</key>
+            <value>{{MessageFlow_messageStructure}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Vendor</key>
+            <value>rojoconsultancy.com</value>
+        </ifl:property>
+        <ifl:property>
+            <key>accountNumber</key>
+            <value>{{MessageFlow_accountNumber}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>topicType</key>
+            <value>{{MessageFlow_topicType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>accessKey</key>
+            <value>{{MessageFlow_accessKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>topicName</key>
+            <value>{{MessageFlow_topicName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>HTTPS</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::AmazonWebServices/vendor::rojoconsultancy.com/tp::HTTPS/mp::SNS/direction::Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>snsMessageAttributeTable</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.2.2</value>
+        </ifl:property>
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            SPLUNK: `  <bpmn2:messageFlow id="MessageFlow_7169" name="Splunk" sourceRef="EndEvent_2" targetRef="Participant_2">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>methodsCloud</key>
+                    <value>{{MessageFlow_methodsCloud}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>deleteUseCaseOperation</key>
+                    <value>deletesavedsearch</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>getModelName</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>Name</key>
+                    <value>Splunk</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>getIndexName</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocolVersion</key>
+                    <value>1.0.5</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>deleteUseCaseOperationCloud</key>
+                    <value>deletesavedsearch</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>credential</key>
+                    <value>{{MessageFlow_credential}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>getInputName</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>rawdata</key>
+                    <value>{{MessageFlow_rawdata}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>postUseCaseOperation</key>
+                    <value>oneshot</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>1.0.5</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>responseFormatForOc</key>
+                    <value>json</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>urlInternet</key>
+                    <value>{{MessageFlow_urlInternet}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tokenId</key>
+                    <value>{{MessageFlow_tokenId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>indexName</key>
+                    <value>{{MessageFlow_indexName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>executionMode</key>
+                     <value>{{MessageFlow_executionMode}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>sharing</key>
+                    <value>{{MessageFlow_sharing}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>deleteModelName</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>system</key>
+                    <value>VIM</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>requestHeaders</key>
+                    <value>{{MessageFlow_requestHeaders}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>responseHeaders</key>
+                   <value>{{MessageFlow_responseHeaders}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>searchid</key>
+                    <value>{{MessageFlow_searchid}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>port</key>
+                     <value>{{MessageFlow_port}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>getUseCaseOperation</key>
+                    <value>getjobs</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocol</key>
+                    <value>HTTPS</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::Splunk/vendor::SAP/tp::HTTPS/mp::REST/direction::Receiver</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.0.5</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Description</key>
+                     <value>{{MessageFlow_Description}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>methods</key>
+                   <value>{{MessageFlow_methods}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentNS</key>
+                    <value>sap</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>responseFormat</key>
+                    <value>{{MessageFlow_responseFormat}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>timeout</key>
+                    <value>{{MessageFlow_timeout}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>inputName</key>
+                    <value>{{MessageFlow_inputName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>searchOnly</key>
+                   <value>{{MessageFlow_searchOnly}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVName</key>
+                    <value>external</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>deleteInputName</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>search</key>
+                    <value>{{MessageFlow_search}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>postUseCaseOperationCloud</key>
+                    <value>{{MessageFlow_postUseCaseOperationCloud}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>locationId</key>
+                    <value>{{MessageFlow_locationId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>disabled</key>
+                   <value>{{MessageFlow_disabled}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>additionalProp</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>authType</key>
+                   <value>{{MessageFlow_authType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>event</key>
+                 <value>{{MessageFlow_event}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocol</key>
+                    <value>REST</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>productType</key>
+                    <value>{{MessageFlow_productType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>direction</key>
+                    <value>Receiver</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>owner</key>
+                    <value>{{MessageFlow_owner}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentType</key>
+                    <value>Splunk</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>patchUseCaseOperationCloud</key>
+                    <value>modifyindex</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>searchableDays</key>
+                    <value>{{MessageFlow_searchableDays}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyType</key>
+                     <value>{{MessageFlow_proxyType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>deleteIndexName</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>Vendor</key>
+                    <value>SAP</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>url</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>modelName</key>
+                    <value>{{MessageFlow_modelName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>searchName</key>
+                    <value>{{MessageFlow_searchName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>modelDesc</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>tokenValue</key>
+                    <value>{{MessageFlow_tokenValue}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>getUseCaseOperationCloud</key>
+                    <value>getjobs</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>username</key>
+                    <value>{{MessageFlow_username}}</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+        </bpmn2:messageFlow>`,
+            MAIL: `<bpmn2:messageFlow id="MessageFlow_" name="Mail" sourceRef="" targetRef="">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>server</key>
+                    <value>{{MessageFlow_server}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Description</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>bcc</key>
+                    <value>{{MessageFlow_bcc}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>attachments</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>auth</key>
+                    <value>{{MessageFlow_auth}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>subject</key>
+                    <value>{{MessageFlow_subject}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encrypt.smime.aes.keysize</key>
+                    <value>{{MessageFlow_encrypt.smime.aes.keysize}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentNS</key>
+                    <value>com.sap.it.ide.mail.ui.namespace2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>keep_attachments</key>
+                    <value>{{MessageFlow_keep_attachments}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>body</key>
+                    <value>{{MessageFlow_body}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ssl</key>
+                    <value>{{MessageFlow_ssl}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>timeout</key>
+                    <value>{{MessageFlow_timeout}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Name</key>
+                    <value>Mail</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocolVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVName</key>
+                    <value>com.sap.it.ide.mail.ui.archive2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyPort</key>
+                    <value>8080</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encrypt.smime.des.keysize</key>
+                    <value>{{MessageFlow_encrypt.smime.des.keysize}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>content_type</key>
+                    <value>{{MessageFlow_content_type}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>locationId</key>
+                    <value>{{MessageFlow_locationId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encrypt.smime.algorithm</key>
+                    <value>{{MessageFlow_encrypt.smime.algorithm}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>signature.smime.table</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>from</key>
+                    <value>{{MessageFlow_from}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocol</key>
+                    <value>None</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>com.sap.it.ide.mail.ui.archive2</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>direction</key>
+                    <value>Receiver</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cc</key>
+                    <value>{{MessageFlow_cc}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>attachmentTransferEncoding</key>
+                    <value>{{MessageFlow_attachmentTransferEncoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encrypt.smime.aes.gcm.keysize</key>
+                    <value>{{MessageFlow_encrypt.smime.aes.gcm.keysize}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentType</key>
+                    <value>Mail</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyProtocol</key>
+                    <value>socks5</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>content_encoding</key>
+                    <value>{{MessageFlow_content_encoding}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyType</key>
+                    <value>{{MessageFlow_proxyType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyAlias</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>componentVersion</key>
+                    <value>1.12</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>proxyHost</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>system</key>
+                    <value>Receiver</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>signature.smime.clearText</key>
+                    <value>{{MessageFlow_signature.smime.clearText}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encrypt.type</key>
+                    <value>{{MessageFlow_encrypt.type}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocol</key>
+                    <value>SMTP</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>tokenCredential</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>to</key>
+                    <value>{{MessageFlow_to}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>encrypt.smime.keys</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::sap:Mail/tp::SMTP/mp::None/direction::Receiver/version::1.12.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>user</key>
+                    <value>{{MessageFlow_user}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.0</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+        </bpmn2:messageFlow>`,
+            SOLACEPUBSUBPLUS: `<bpmn2:messageFlow id="MessageFlow_88661862" name="SolacePubSubPlus" sourceRef="EndEvent_2" targetRef="Participant_2">
+    <bpmn2:extensionElements>
+
+        <ifl:property>
+            <key>applicationMessageType</key>
+            <value>{{MessageFlow_applicationMessageType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>senderTimestamp</key>
+            <value>{{MessageFlow_senderTimestamp}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>SolacePubSubPlus</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.3.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>password</key>
+            <value>{{MessageFlow_password}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>elidingEligible</key>
+            <value>{{MessageFlow_elidingEligible}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageType</key>
+            <value>{{MessageFlow_messageType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>deliveryMode</key>
+            <value>{{MessageFlow_deliveryMode}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>host</key>
+            <value>{{MessageFlow_host}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>userProperties</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>reply</key>
+            <value>{{MessageFlow_reply}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.3.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>sequenceNumber</key>
+            <value>{{MessageFlow_sequenceNumber}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>keyStoreAlias</key>
+            <value>{{MessageFlow_keyStoreAlias}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>endpointType</key>
+            <value>{{MessageFlow_endpointType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cosValue</key>
+            <value>{{MessageFlow_cosValue}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauth2AuthorizationCodeCredentialName</key>
+            <value>{{MessageFlow_oauth2AuthorizationCodeCredentialName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>componentVersion</key>
+            <value>1.3</value>
+        </ifl:property>
+        <ifl:property>
+            <key>priority</key>
+            <value>{{MessageFlow_priority}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>replyToDestination</key>
+            <value>{{MessageFlow_replyToDestination}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>applicationMessageId</key>
+            <value>{{MessageFlow_applicationMessageId}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>TCP</value>
+        </ifl:property>
+        <ifl:property>
+            <key>replyTimeout</key>
+            <value>1000</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::SolacePubSubPlus/vendor::Solace/tp::TCP/mp::SMF/direction::Receiver/version::1.3.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.3.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>replyToEndpointType</key>
+            <value>{{MessageFlow_replyToEndpointType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>oauth2ClientCredentialsCredentialName</key>
+            <value>{{MessageFlow_oauth2ClientCredentialsCredentialName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthClientId</key>
+            <value>{{MessageFlow_oauthClientId}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthRefreshToken</key>
+            <value>{{MessageFlow_oauthRefreshToken}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>external</value>
+        </ifl:property>
+        <ifl:property>
+            <key>senderId</key>
+            <value>{{MessageFlow_senderId}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthAccessToken</key>
+            <value>{{MessageFlow_oauthAccessToken}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>messageVpn</key>
+            <value>{{MessageFlow_messageVpn}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>dmqEligible</key>
+            <value>{{MessageFlow_dmqEligible}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthRefreshTokenUrl</key>
+            <value>{{MessageFlow_oauthRefreshTokenUrl}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destinationName</key>
+            <value>{{MessageFlow_destinationName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>correlationId</key>
+            <value>{{MessageFlow_correlationId}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>jcsmpProperties</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>SMF</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>SolacePubSubPlus</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthCredentialType</key>
+            <value>{{MessageFlow_oauthCredentialType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Vendor</key>
+            <value>Solace</value>
+        </ifl:property>
+        <ifl:property>
+            <key>requestReply</key>
+            <value>{{MessageFlow_requestReply}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ttl</key>
+            <value>{{MessageFlow_ttl}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>accessTokenFetchIntervalInSecs</key>
+            <value>{{MessageFlow_accessTokenFetchIntervalInSecs}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>authenticationType</key>
+            value>{{MessageFlow_authenticationType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>trustStoreAlias</key>
+            <value>{{MessageFlow_trustStoreAlias}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>username</key>
+            <value>{{MessageFlow_username}}</value>
+        </ifl:property>
+
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            GOOGLECLOUDSTORAGE: `<bpmn2:messageFlow id="MessageFlow_" name="GoogleCloudStorage" sourceRef="" targetRef="">
+    <bpmn2:extensionElements>
+        <ifl:property>
+            <key>bucketName</key>
+            <value>{{MessageFlow_bucketName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>rewriteToken</key>
+            <value>{{MessageFlow_rewriteToken}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destObjectName</key>
+            <value>{{MessageFlow_destObjectName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>encryptionKey</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>Name</key>
+            <value>GoogleCloudStorage</value>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocolVersion</key>
+            <value>1.1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>useSa</key>
+            <value>{{MessageFlow_useSa}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>customEncryption</key>
+            <value>{{MessageFlow_customEncryption}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>maxResults</key>
+            <value>{{MessageFlow_maxResults}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destKmsKeyName</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>host</key>
+            <value>{{MessageFlow_host}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>options</key>
+            <value>{{MessageFlow_options}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>socketTimeout</key>
+            <value>{{MessageFlow_socketTimeout}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>searchPattern</key>
+            <value>*</value>
+        </ifl:property>
+        <ifl:property>
+            <key>contentType</key>
+            <value>{{MessageFlow_contentType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVId</key>
+            <value>1.1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>srcObjectName</key>
+            <value>{{MessageFlow_srcObjectName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>audience</key>
+            <value>{{MessageFlow_audience}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>getMetadata</key>
+            <value>{{MessageFlow_getMetadata}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>clientEmail</key>
+            <value>{{MessageFlow_clientEmail}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>componentVersion</key>
+            <value>1.1</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destDirectory</key>
+            <value>{{MessageFlow_destDirectory}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>system</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>requestHeaders</key>
+            <value>{{MessageFlow_requestHeaders}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>responseHeaders</key>
+            <value>{{MessageFlow_responseHeaders}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destEncryptionKey</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>TransportProtocol</key>
+            <value>HTTPS</value>
+        </ifl:property>
+        <ifl:property>
+            <key>folderName</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>pageToken</key>
+            <value>{{MessageFlow_pageToken}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>queryParam</key>
+            <value>{{MessageFlow_queryParam}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>cmdVariantUri</key>
+            <value>ctype::AdapterVariant/cname::GoogleCloudStorage/vendor::rojoconsultancy.com/tp::HTTPS/mp::REST/direction::Receiver/version::1.1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>projectName</key>
+            <value>{{MessageFlow_projectName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>fields</key>
+            <value>{{MessageFlow_fields}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocolVersion</key>
+            <value>1.1.0</value>
+        </ifl:property>
+        <ifl:property>
+            <key>saUrl</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>createSubdirectories</key>
+            <value>{{MessageFlow_createSubdirectories}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>oauthUrl</key>
+            <value>{{MessageFlow_oauthUrl}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>srcFolderName</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>Description</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>reuseConnection</key>
+            <value>{{MessageFlow_reuseConnection}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentNS</key>
+            <value>sap</value>
+        </ifl:property>
+        <ifl:property>
+            <key>entraCredName</key>
+            <value>{{MessageFlow_entraCredName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>scopeSts</key>
+            <value>{{MessageFlow_scopeSts}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>directory</key>
+            <value>{{MessageFlow_directory}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>recursive</key>
+            <value>{{MessageFlow_recursive}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentSWCVName</key>
+            <value>external</value>
+        </ifl:property>
+        <ifl:property>
+            <key>locationId</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>scope</key>
+            <value>{{MessageFlow_scope}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>srcBucketName</key>
+            <value>{{MessageFlow_srcBucketName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>stsTokenUrl</key>
+            <value>{{MessageFlow_stsTokenUrl}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>uploadType</key>
+            <value>{{MessageFlow_uploadType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>connectionTimeout</key>
+            <value>{{MessageFlow_connectionTimeout}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>MessageProtocol</key>
+            <value>REST</value>
+        </ifl:property>
+        <ifl:property>
+            <key>direction</key>
+            <value>Receiver</value>
+        </ifl:property>
+        <ifl:property>
+            <key>multiChunk</key>
+            <value>{{MessageFlow_multiChunk}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destCustomEncryption</key>
+            <value>false</value>
+        </ifl:property>
+        <ifl:property>
+            <key>existingFileHandling</key>
+            <value>{{MessageFlow_existingFileHandling}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>ComponentType</key>
+            <value>GoogleCloudStorage</value>
+        </ifl:property>
+        <ifl:property>
+            <key>objMetadata</key>
+            <value>{{MessageFlow_objMetadata}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>chunkSize</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>proxyType</key>
+            <value>{{MessageFlow_proxyType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>Vendor</key>
+            <value>rojoconsultancy.com</value>
+        </ifl:property>
+        <ifl:property>
+            <key>delegates</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>destFolderName</key>
+            <value>{{MessageFlow_destFolderName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>kmsKeyName</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>scopeSa</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>destEncryptionKeyType</key>
+            <value>custom</value>
+        </ifl:property>
+        <ifl:property>
+            <key>privateKey</key>
+            <value>{{MessageFlow_privateKey}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>srcDirectory</key>
+            <value>{{MessageFlow_srcDirectory}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>encryptionKeyType</key>
+            <value>custom</value>
+        </ifl:property>
+        <ifl:property>
+            <key>objectName</key>
+            <value>{{MessageFlow_objectName}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>authenticationType</key>
+            <value>{{MessageFlow_authenticationType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>credentialName</key>
+            <value/>
+        </ifl:property>
+        <ifl:property>
+            <key>operation</key>
+            <value>{{MessageFlow_operation}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>resourceType</key>
+            <value>{{MessageFlow_resourceType}}</value>
+        </ifl:property>
+        <ifl:property>
+            <key>destBucketName</key>
+            <value>{{MessageFlow_destBucketName}}</value>
+        </ifl:property>
+    </bpmn2:extensionElements>
+</bpmn2:messageFlow>`,
+            MICROSOFTONEDRIVE: `<bpmn2:messageFlow id="MessageFlow_" name="MicrosoftOneDrive" sourceRef="" targetRef="">
+            <bpmn2:extensionElements>
+                <ifl:property>
+                    <key>specialFolderName</key>
+                    <value>{{MessageFlow_specialFolderName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>directoryMandatory</key>
+                    <value>{{MessageFlow_directoryMandatory}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>permissionId</key>
+                    <value>{{MessageFlow_permissionId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>sourceFileName</key>
+                    <value>{{MessageFlow_sourceFileName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>expirationDateTime</key>
+                    <value>{{MessageFlow_expirationDateTime}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Description</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>targetDirectory</key>
+                    <value>{{MessageFlow_targetDirectory}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentNS</key>
+                    <value>sap</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>responseHeader</key>
+                    <value>{{MessageFlow_responseHeader}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>pageSize</key>
+                    <value>{{MessageFlow_pageSize}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>responseFormat</key>
+                    <value>{{MessageFlow_responseFormat}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>receiverCredentialName</key>
+                    <value>{{MessageFlow_receiverCredentialName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>type</key>
+                    <<value>{{MessageFlow_type}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Name</key>
+                    <value>MicrosoftOneDrive</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocolVersion</key>
+                    <value>1.0.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVName</key>
+                    <value>external</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>scope</key>
+                    <value>{{MessageFlow_scope}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>targetFileName</key>
+                    <value>{{MessageFlow_targetFileName}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>processInPages</key>
+                    <value>{{MessageFlow_processInPages}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>operationGroup</key>
+                    <value>{{MessageFlow_operationGroup}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>fileNameMandatory</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>1.0.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocol</key>
+                    <value>REST</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>receiverBodySize</key>
+                    <value>{{MessageFlow_receiverBodySize}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>direction</key>
+                    <value>Receiver</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>drivesOperation</key>
+                    <value>{{MessageFlow_drivesOperation}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentType</key>
+                    <value>MicrosoftOneDrive</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>receiverAuthenticationType</key>
+                    <value>{{MessageFlow_receiverAuthenticationType}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>sourceDirectory</key>
+                    <value>{{MessageFlow_sourceDirectory}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>query</key>
+                    <value>{{MessageFlow_query}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>permissionsOperation</key>
+                    <value>{{MessageFlow_permissionsOperation}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>Vendor</key>
+                    <value>SAP</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>additionalArguments</key>
+                    <value/>
+                </ifl:property>
+                <ifl:property>
+                    <key>driveItemsOperation</key>
+                    <value>{{MessageFlow_driveItemsOperation}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>batchingOperation</key>
+                    <value>{{MessageFlow_batchingOperation}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>timeOut</key>
+                    <value>{{MessageFlow_timeOut}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>handlingForExistingFiles</key>
+                    <value>{{MessageFlow_handlingForExistingFiles}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>searchForItem</key>
+                    <value>{{MessageFlow_searchForItem}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>versionId</key>
+                    <value>{{MessageFlow_versionId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>system</key>
+                    <value>Receiver</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>driveId</key>
+                    <value>{{MessageFlow_driveId}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>fileNameOptional</key>
+                    <value>{{MessageFlow_fileNameOptional}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>comment</key>
+                    <value>{{MessageFlow_comment}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>responseFormatForDownloadaFile</key>
+                    <value>{{MessageFlow_responseFormatForDownloadaFile}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>requestHeader</key>
+                    <value>{{MessageFlow_requestHeader}}</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>TransportProtocol</key>
+                    <value>HTTP</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::MicrosoftOneDrive/vendor::SAP/tp::HTTP/mp::REST/direction::Receiver</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.0.0</value>
+                </ifl:property>
+            </bpmn2:extensionElements>
+        </bpmn2:messageFlow>`,
+        },
     },
-  },
-  {
-    Collaboration: {
-      ExtensinElements: `<bpmn2:extensionElements>
+    {
+        Collaboration: {
+            ExtensinElements: `<bpmn2:extensionElements>
             <ifl:property>
                 <key>namespaceMapping</key>
                 <value/>
@@ -14977,9 +20388,9 @@ export const SourceXML = [
                 <value>ctype::IFlowVariant/cname::IFlowConfiguration/version::1.2.4</value>
             </ifl:property>
        </bpmn2:extensionElements>`,
-    },
-    participants: {
-      Sender: `<bpmn2:participant id="Participant_1" ifl:type="EndpointSender" name="Sender">
+        },
+        participants: {
+            Sender: `<bpmn2:participant id="Participant_1" ifl:type="EndpointSender" name="Sender">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>enableBasicAuthentication</key>
@@ -14991,7 +20402,7 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:participant>`,
-      Receiver: `<bpmn2:participant id="Participant_" ifl:type="EndpointRecevier" name="Receiver">
+            Receiver: `<bpmn2:participant id="Participant_" ifl:type="EndpointRecevier" name="Receiver">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>ifl:type</key>
@@ -14999,10 +20410,10 @@ export const SourceXML = [
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:participant>`,
-      IntegrationProcess: `<bpmn2:participant id="Participant_Process_1" ifl:type="IntegrationProcess" name="Integration Process" processRef="Process_1">
+            IntegrationProcess: `<bpmn2:participant id="Participant_Process_1" ifl:type="IntegrationProcess" name="Integration Process" processRef="Process_1">
             <bpmn2:extensionElements/>
         </bpmn2:participant>`,
-      exceptionSubprocess: `<bpmn2:subProcess id="SubProcess_1" name="Exception Subprocess 1">
+            exceptionSubprocess: `<bpmn2:subProcess id="SubProcess_1" name="Exception Subprocess 1">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>componentVersion</key>
@@ -15049,11 +20460,11 @@ export const SourceXML = [
             </bpmn2:startEvent>
             <bpmn2:sequenceFlow id="SequenceFlow_15" sourceRef="StartEvent_13" targetRef="EndEvent_14"/>
         </bpmn2:subProcess>`,
+        },
     },
-  },
-  {
-    IntegrationProcess: {
-      extensionElements: `<bpmn2:extensionElements>
+    {
+        IntegrationProcess: {
+            extensionElements: `<bpmn2:extensionElements>
             <ifl:property>
                 <key>transactionTimeout</key>
                 <value>30</value>
@@ -15071,11 +20482,11 @@ export const SourceXML = [
                 <value>Not Required</value>
             </ifl:property>
         </bpmn2:extensionElements>`,
+        },
     },
-  },
-  {
-    BPMNDiagram: {
-      defaultBPMNShape: `
+    {
+        BPMNDiagram: {
+            defaultBPMNShape: `
             <bpmndi:BPMNShape bpmnElement="Participant_1" id="BPMNShape_Participant_1">
                 <dc:Bounds height="140.0" width="100.0" x="40.0" y="100.0"/>
             </bpmndi:BPMNShape>
@@ -15083,13 +20494,13 @@ export const SourceXML = [
                 <dc:Bounds height="450.0" width="540.0" x="250.0" y="60.0"/>
             </bpmndi:BPMNShape>
             `,
-      BPMNShape: `<bpmndi:BPMNShape bpmnElement="CallActivity_" id="BPMNShape_CallActivity_">
+            BPMNShape: `<bpmndi:BPMNShape bpmnElement="CallActivity_" id="BPMNShape_CallActivity_">
                 <dc:Bounds height="60.0" width="100.0" x="412.0" y="132.0"/>
             </bpmndi:BPMNShape>`,
-      BPMNEdge: `<bpmndi:BPMNEdge bpmnElement="SequenceFlow_" id="BPMNEdge_SequenceFlow_" sourceElement="" targetElement="">
+            BPMNEdge: `<bpmndi:BPMNEdge bpmnElement="SequenceFlow_" id="BPMNEdge_SequenceFlow_" sourceElement="" targetElement="">
                 <di:waypoint x="308.0" xsi:type="dc:Point" y="160.0"/>
                 <di:waypoint x="462.0" xsi:type="dc:Point" y="160.0"/>
             </bpmndi:BPMNEdge>`,
+        },
     },
-  },
 ];
