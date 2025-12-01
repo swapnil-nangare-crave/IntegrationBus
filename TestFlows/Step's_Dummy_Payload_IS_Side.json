@@ -1,0 +1,164 @@
+{
+  "iflowName": "Step's_Integration",
+  "steps": [
+ 
+    {
+      "type": "StartEvent",
+      "stepno": 1,
+      "label": "Start",
+      "id": "StartEvent_1",
+      "incoming": null,
+      "outgoing": "SequenceFlow_1",
+      "config": {}
+    },
+ 
+    {
+      "type": "operationMapping",
+      "stepno": 2,
+      "label": "Operation Mapping",
+      "id": "CallActivity_1",
+      "incoming": "SequenceFlow_1",
+      "outgoing": "SequenceFlow_2",
+      "config": {
+        "CallActivity_1_resource": "DefaultResource"
+      }
+    },
+ 
+    {
+      "type": "xsltMapping",
+      "stepno": 3,
+      "label": "XSLT Mapping",
+      "id": "CallActivity_2",
+      "incoming": "SequenceFlow_2",
+      "outgoing": "SequenceFlow_3",
+      "config": {
+        "CallActivity_2_mappingSource": "Header",
+        "CallActivity_2_mappingSrcHeader": "Header",
+        "CallActivity_2_mappingHeaderNameKey": "",
+        "CallActivity_2_mappingOutputFormat": "Bytes"
+      }
+    },
+ 
+    {
+      "type": "csvToXMLConverter",
+      "stepno": 4,
+      "label": "CSV to XML Converter",
+      "id": "CallActivity_3",
+      "incoming": "SequenceFlow_3",
+      "outgoing": "SequenceFlow_4",
+      "config": {
+        "CallActivity_3_XML_Schema_File_Path": "/XSDs/Invoice.xsd",
+        "CallActivity_3_headerMapping": "mapHeadersToXSD",
+        "CallActivity_3_Record_Identifier_in_CSV": "REC",
+        "CallActivity_3_Field_Separator_in_CSV": ",",
+        "CallActivity_3_ignoreFirstLineHeader": "FALSE"
+      }
+    },
+ 
+    {
+      "type": "ediToXMLConverter",
+      "stepno": 5,
+      "label": "EDI to XML Converter",
+      "id": "CallActivity_4",
+      "incoming": "SequenceFlow_4",
+      "outgoing": "SequenceFlow_5",
+      "config": {
+        "CallActivity_4_edifactSourceEncoding": "ISO-8859-1",
+        "CallActivity_4_edifactTargetRootElement": "interchange",
+        "CallActivity_4_edifactDecimalCharacter": ".",
+        "CallActivity_4_edifactEdiSchemaSource": "Header",
+        "CallActivity_4_edifactHeaderName": "EDIFACT",
+        "CallActivity_4_edifactEnvelopeTruncator": "TRUE",
+ 
+        "CallActivity_4_x12SourceEncoding": "ISO-8859-1",
+        "CallActivity_4_x12EdiSchemaSource": "Header",
+        "CallActivity_4_x12HeaderName": "X12",
+        "CallActivity_4_x12EnvelopeTruncator": "TRUE",
+ 
+        "CallActivity_4_tradacomsSourceEncoding": "ISO-8859-1",
+        "CallActivity_4_tradacomsConversionPreference": "Dynamic",
+        "CallActivity_4_tradacomsEdiSchemaSource": "Dynamic",
+        "CallActivity_4_tradacomsHeaderName": "TRADACOMS"
+      }
+    },
+ 
+    {
+      "type": "IDMapping",
+      "stepno": 6,
+      "label": "ID Mapping",
+      "id": "CallActivity_5",
+      "incoming": "SequenceFlow_5",
+      "outgoing": "SequenceFlow_6",
+      "config": {
+        "CallActivity_5_sourceMessageID": "MSG001",
+        "CallActivity_5_targetHeader": "TargetHeader",
+        "CallActivity_5_context": "IDMapper1",
+        "CallActivity_5_visibility": "global",
+        "CallActivity_5_expire": "30"
+      }
+    },
+ 
+    {
+      "type": "gather",
+      "stepno": 7,
+      "label": "Gather",
+      "id": "CallActivity_6",
+      "incoming": "SequenceFlow_6",
+      "outgoing": "SequenceFlow_7",
+      "config": {
+        "CallActivity_6_messageType": "SameXMLFormat",
+        "CallActivity_6_aggregationAlgorithm": "enhancedTarAggregationStrategy",
+        "CallActivity_6_sourceXPath": "/root",
+        "CallActivity_6_targetXPath": "/mergedRoot",
+        "CallActivity_6_gatherFileNames": "file1.xml,file2.xml"
+      }
+    },
+ 
+    {
+      "type": "aggregator",
+      "stepno": 8,
+      "label": "Aggregator",
+      "id": "CallActivity_7",
+      "incoming": "SequenceFlow_7",
+      "outgoing": "SequenceFlow_8",
+      "config": {
+        "CallActivity_7_correlationExpression": "/root/id",
+        "CallActivity_7_incomingFormat": "XML_SAME_FORMAT",
+        "CallActivity_7_aggregationAlgorithm": "sap-sequenced-id-list",
+        "CallActivity_7_messageSequenceExpression": "/root/seq",
+        "CallActivity_7_lastMessageCondition": "/root/isLast='Y'",
+        "CallActivity_7_timeout": "60",
+        "CallActivity_7_datastoreName": "Aggregator-1"
+      }
+    },
+ 
+    {
+      "type": "EndEvent",
+      "stepno": 9,
+      "label": "End",
+      "id": "EndEvent_1",
+      "incoming": "SequenceFlow_8",
+      "outgoing": null,
+      "config": {}
+    }
+  ],
+ 
+  "sequenceFlows": [
+    { "id": "SequenceFlow_1", "sourceRef": "StartEvent_1", "targetRef": "CallActivity_1" },
+    { "id": "SequenceFlow_2", "sourceRef": "CallActivity_1", "targetRef": "CallActivity_2" },
+    { "id": "SequenceFlow_3", "sourceRef": "CallActivity_2", "targetRef": "CallActivity_3" },
+    { "id": "SequenceFlow_4", "sourceRef": "CallActivity_3", "targetRef": "CallActivity_4" },
+    { "id": "SequenceFlow_5", "sourceRef": "CallActivity_4", "targetRef": "CallActivity_5" },
+    { "id": "SequenceFlow_6", "sourceRef": "CallActivity_5", "targetRef": "CallActivity_6" },
+    { "id": "SequenceFlow_7", "sourceRef": "CallActivity_6", "targetRef": "CallActivity_7" },
+    { "id": "SequenceFlow_8", "sourceRef": "CallActivity_7", "targetRef": "EndEvent_1" }
+  ],
+ 
+  "senders": [],
+  "receivers": [],
+  "mappings": [],
+  "scripts": [],
+  "xslts": [],
+  "messageFlows": []
+}
+ 

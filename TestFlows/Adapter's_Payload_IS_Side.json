@@ -1,0 +1,112 @@
+{
+  "iflowName": "AMQP_Websocket_to_AMQP_Websocket_Integration",
+  "steps": [
+    {
+      "type": "StartEvent",
+      "stepno": 1,
+      "label": "Start",
+      "id": "StartEvent_1",
+      "outgoing": "SequenceFlow_1",
+      "incoming": null,
+      "config": {}
+    },
+    {
+      "type": "requestReply",
+      "stepno": 2,
+      "label": "Send File via SMB",
+      "id": "ServiceTask_1",
+      "incoming": "SequenceFlow_1",
+      "outgoing": "SequenceFlow_2",
+      "config": {}
+    },
+    {
+      "type": "EndEvent",
+      "stepno": 3,
+      "label": "End",
+      "id": "EndEvent_1",
+      "incoming": "SequenceFlow_2",
+      "outgoing": null,
+      "config": {}
+    }
+  ],
+  "senders": [
+    {
+      "id": "MessageFlow_1",
+      "type": "AMQP_WEBSOCKET",
+      "source": "Participant_1",
+      "target": "StartEvent_1",
+      "label": "AMQP WebSocket Sender",
+     "config": {
+  "MessageFlow_1_host": "amqp.server.cloud",
+  "MessageFlow_1_port": "443",
+  "MessageFlow_1_path": "/amqp",
+  "MessageFlow_1_proxyType": "none",
+  "MessageFlow_1_location_id": "LOC_DEV_01",
+  "MessageFlow_1_connectWithTLS": "TRUE",
+  "MessageFlow_1_disableReplyTo": "FALSE",
+  "MessageFlow_1_authentication": "SASL",
+  "MessageFlow_1_credentialName": "amqp_cred",
+  "MessageFlow_1_destinationName": "queue/test",
+  "MessageFlow_1_NumberConcurrentProcesses": "1",
+  "MessageFlow_1_queuePrefetch": "5",
+  "MessageFlow_1_consumeExpiredMessages": "FALSE",
+  "MessageFlow_1_maxRetries": "5",
+  "MessageFlow_1_deliveryState": "REJECTED"
+}
+ 
+    }
+  ],
+  "receivers": [
+    {
+      "id": "MessageFlow_2",
+      "type": "AMQP_WEBSOCKET",
+      "source": "ServiceTask_1",
+      "target": "Participant_2",
+      "label": "AMQP WebSocket Receiver",
+     "config": {
+  "MessageFlow_2_host": "amqp.server.test.com",
+  "MessageFlow_2_port": "5671",
+  "MessageFlow_2_path": "/queue/incoming",
+  "MessageFlow_2_proxyType": "none",
+  "MessageFlow_2_location_id": "loc_01",
+  "MessageFlow_2_connectWithTLS": "TRUE",
+  "MessageFlow_2_authentication": "None",
+  "MessageFlow_2_credentialName": "AMQP_Credential",
+  "MessageFlow_2_destinationType": "queue",
+  "MessageFlow_2_destinationName": "Incoming_Queue",
+  "MessageFlow_2_expirationPeriod": "3600",
+  "MessageFlow_2_delivery": "persistent",
+  "MessageFlow_2_messageType": "text",
+  "MessageFlow_2_jmsKeyFormatStrategy": "replace"
+}
+ 
+    }
+  ],
+  "mappings": [],
+  "scripts": [],
+  "xslts": [],
+  "sequenceFlows": [
+    {
+      "id": "SequenceFlow_1",
+      "sourceRef": "StartEvent_1",
+      "targetRef": "ServiceTask_1"
+    },
+    {
+      "id": "SequenceFlow_2",
+      "sourceRef": "ServiceTask_1",
+      "targetRef": "EndEvent_1"
+    }
+  ],
+  "messageFlows": [
+    {
+      "id": "MessageFlow_1",
+      "sourceRef": "Participant_1",
+      "targetRef": "StartEvent_1"
+    },
+    {
+      "id": "MessageFlow_2",
+      "sourceRef": "ServiceTask_1",
+      "targetRef": "Participant_2"
+    }
+  ]
+}
