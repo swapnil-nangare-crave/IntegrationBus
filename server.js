@@ -183,16 +183,20 @@ const CreateCollaboration=(data)=>{
     }
 
     data.senders.forEach((senderConnector) => {
-      let sourceXML = SourceXML[1].SenderAdaptors[senderConnector.type.toUpperCase()];
-      let result = updateMessageFlowIds(sourceXML,senderConnector);
-      messageFlow += result.updatedXML;
-    });
+    let sourceXML = SourceXML[1].SenderAdaptors[senderConnector.type.toUpperCase()];
+     if (!sourceXML) {
+    throw new Error(`Unsupported sender type: ${senderConnector.type}`);
+  }
+    let result = updateMessageFlowIds(sourceXML, senderConnector);
+    messageFlow += result.updatedXML;
+  });
 
-    data.receivers.forEach((receiverConnector) => {
-      let sourceXML = SourceXML[1].ReceiverAdaptors[receiverConnector.type.toUpperCase()];
-      let result = updateMessageFlowIds(sourceXML,receiverConnector);
-      messageFlow += result.updatedXML;
-    });
+  data.receivers.forEach((receiverConnector) => {    
+    let sourceXML = SourceXML[1].ReceiverAdaptors[receiverConnector.type.toUpperCase()];   
+    
+     if (!sourceXML) {
+    throw new Error(`Unsupported receiver type: ${receiverConnector.type}`);
+  }
 
     return `<bpmn2:collaboration id="Collaboration_1" name="Default Collaboration">${extensionElements}${participants}${messageFlow}</bpmn2:collaboration>`;
 } 
